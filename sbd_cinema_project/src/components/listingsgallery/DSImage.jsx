@@ -2,7 +2,7 @@ import React from "react";
 
 function DSImage () {
     return (
-        <img src={} alt="DSImage" />
+        <img src={"./DSImage.jpg"} alt="DSImage" />
     )
 }
 

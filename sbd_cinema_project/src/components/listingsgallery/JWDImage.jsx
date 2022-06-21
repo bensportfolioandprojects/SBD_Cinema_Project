@@ -2,7 +2,7 @@ import React from "react";
 
 function JWDImage () {
     return (
-        <img src={} alt="JWDImage" />
+        <img src={"./JWDImage.jpg"} alt="JWDImage" />
     )
 }
 
