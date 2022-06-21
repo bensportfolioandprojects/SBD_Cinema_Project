@@ -2,7 +2,7 @@ import React from "react";
 
 function LImage () {
     return (
-        <img src={"./LImage.jpg"} alt="LImage" />
+        <img src={"./LImage.webp"} alt="LImage" />
     )
 }
 
