@@ -1,7 +1,7 @@
 import ClassList from "./components/classifications/ClassList";
 import ClassTitle from "./components/classifications/ClassTitle";
 
-const classifications = () => {
+const Classifications = () => {
     return ( 
         <>
             <ClassTitle/>
@@ -10,4 +10,4 @@ const classifications = () => {
      );
 }
  
-export default classifications;
+export default Classifications;
