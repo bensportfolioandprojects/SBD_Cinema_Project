@@ -4,4 +4,4 @@ import ScreensLayout from './screenslayout.js';
 
 
 
-ReactDOM.render(<ScreensLayout />)
+ReactDOM.render(ScreensLayout)
