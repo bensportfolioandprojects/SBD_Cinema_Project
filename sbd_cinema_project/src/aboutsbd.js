@@ -1,3 +1,5 @@
-import AboutSBDLayout from "./aboutsbdlayout";
+import ReactDOM from "react-dom";
+import AboutSBD from "./aboutsbdlayout";
 
-ReactDom.render(AboutSBDLayout)
+ReactDOM.render(AboutSBD)
+  
