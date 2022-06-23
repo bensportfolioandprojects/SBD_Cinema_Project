@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { emailRegex } from './emailRegex';
+import axios from 'axios';
 
 function Email() {
 
@@ -7,25 +9,37 @@ function Email() {
     const [message, setMessage] = useState('');
     
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        fetch('http://localhost:3002/send', {
-        method: "POST",
-        body: JSON.stringify({name, email, message}),
-        headers: {
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+        if (!email.length) {
+            return {
+                status: true,
+                value: "Email is required"
+            };
+        } else if (!emailRegex.test(email)) {
+            console.log(email);
+            return {
+                status: true,
+                value: "Email is invalid"
+            };
+        }
+        return await axios({
+            url: 'http://localhost:3002/send',
+            method: "POST",
+            headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
-        },
-    }).then(
-    (response) => (response.json())
-        ).then((response) => {
-        if (response.status === 'success') {
-            alert("Message Sent.");
-        } else if (response.status === 'fail') {
-            alert("Message failed to send.")
-        }
-        })
-    }
+            },
+            data: JSON.stringify({name, email, message})
+        }).then((response) => {
+            if(response.data.status === 'success') {
+                alert("Message Sent.");
+              } else if (response.data.status === 'fail') {
+                alert("Message failed to send.")
+              }
+        return response.data;
+    }).catch((err) => console.log(err))
+    };
 
     return (
         <div className="Email">

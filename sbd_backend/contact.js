@@ -42,19 +42,18 @@ router.post('/send', (req, res, next) => {
         status: 'fail'
       })
     } else {
-      res.json({
-         status: 'success'
-      })
-  
       transporter.sendMail({
         from: "sbd.qacinemas@hotmail.com",
         to: email,
         subject: "Submission was successful",
-        text: `Thank you for contacting us!\n\nForm details\nName: ${name}\n Email: ${email}\n Message: ${message}`
+        text: `Thank you for contacting us!\n\nForm details\n Name: ${name}\n Email: ${email}\n Message: ${message}`
       }, function(error, info){
         if(error) {
           console.log(error);
         } else{
+          res.json({
+            status: 'success'
+          })
           console.log('Message sent: ' + info.response);
         }
       });
