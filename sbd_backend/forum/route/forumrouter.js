@@ -1,5 +1,6 @@
 const express = require('express');
-const Forum = require('../model/Forum');
+const { builtinModules } = require('module');
+const Forum = require('../model/Forumdb');
 
 const router = express.Router();
 
@@ -25,6 +26,7 @@ router.post('/create', async (request, response, next) => {
         next(err);
     }
 });
+module.exports = router;
 
 // router.delete('/delete/:id', async (request, response, next) => {
 //     const id = request.params.id;
@@ -37,4 +39,4 @@ router.post('/create', async (request, response, next) => {
 //         next({ statusCode: 404, message: `Turtle with id ${id} does not exist`});
 //     }
 // });
-// module.exports = router;
+// 

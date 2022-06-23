@@ -5,7 +5,6 @@ const forumSchema = new Schema({
     message: {
         type: String,
         trim: true, 
-        required: [true, "Message can't be blank"],
         maxlength: 200
     },
 });

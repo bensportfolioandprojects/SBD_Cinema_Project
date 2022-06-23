@@ -1,13 +1,15 @@
 const express = require('express');
 const morgan = require('morgan');
 const mongoose = require('mongoose');
-const forumrouter = require('./route/forum-router');
+const cors = require('cors');
+const forumrouter = require('./route/forumrouter');
 const PORT = process.env.PORT || 3000;
 const DATABASE = 'test';
 const DB_URI = `mongodb://localhost:27017/${DATABASE}`;
 
 
 const app = express();
+app.use(cors());
 app.use(morgan('dev'));
 app.use(express.json()); 
 app.use('/forum', forumrouter);
