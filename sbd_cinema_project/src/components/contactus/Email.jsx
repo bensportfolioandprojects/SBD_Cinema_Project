@@ -1,6 +1,6 @@
-import React from 'react';
+import { useState } from 'react';
 
-function Email(props) {
+function Email() {
 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -9,9 +9,9 @@ function Email(props) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        fetch('http://localhost:3002/send',{
+        fetch('http://localhost:3002/send', {
         method: "POST",
-        body: JSON.stringify(state),
+        body: JSON.stringify({name, email, message}),
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
@@ -21,50 +21,32 @@ function Email(props) {
         ).then((response) => {
         if (response.status === 'success') {
             alert("Message Sent.");
-            resetForm()
         } else if (response.status === 'fail') {
             alert("Message failed to send.")
         }
         })
     }
 
-    resetForm = () => {
-        setState({name: '', email: '', message: ''})
-    }
-
-  
-    return(
+    return (
         <div className="Email">
             <form id="contact-form" method="POST">
                 <div className="form-group">
                     <label htmlFor="name">Name</label>
-                    <input type="text" className="form-control" id="name" value={state.name} />
+                    <input type="text" className="form-control" id="name" value={name} onChange={e => setName(e.target.value)} />
                 </div>
                 <div className="form-group">
                     <label htmlFor="exampleInputEmail1">Email address</label>
-                    <input type="email" className="form-control" id="email" aria-describedby="emailHelp" value={state.email} />
+                    <input type="email" className="form-control" id="email" aria-describedby="emailHelp" value={email} onChange={e => setEmail(e.target.value)}/>
                 </div>
                 <div className="form-group">
                     <label htmlFor="message">Message</label>
-                    <textarea className="form-control" rows="5" id="message" value={state.message} />
+                    <textarea className="form-control" rows="5" id="message" value={message} onChange={e => setMessage(e.target.value)}/>
                 </div>
-                <button type="submit" className="btn btn-primary">Submit</   button>
+                <button type="submit" className="btn btn-primary">Submit</button>
             </form>
         </div>
         );
     }
-
-    const onNameChange = event => {
-	    setName(value);
-    }
-
-    const onEmailChange = event => {
-	    setEmail(value)
-    }
-
-    const onMessageChange = event => {
-	    setMessage(value)
-}
 
 
 export default Email;
