@@ -3,14 +3,16 @@ import React from "react";
 function AboutSBDBody() {
     return (
         <div className="aboutsbdbody--container">
-        <p>We are Silent But Deadly. We are a group of 4 up and coming software engineers who built this website from the ground up.
+            <h1>We are Silent But Deadly</h1>
+        <p>We are a group of 4 up and coming software engineers who built this website from the ground up.
             The group consists of Ben Phillips, Elias Sadek, Daniel Charles Conroy and Richard Edwin de Young.
+            We are currently training under QA Ltd and will soon be working at the MET Office in Devon, England.
         </p>
         <h2>
            Ben Phillips - @BenPhillipsQAC - Ben@QACinemas.com
         </h2>
         <p>
-            
+        
         </p>
         <h2>
            Elias Sadek - @EliasSadekQAC - Elias@QACinemas.com
@@ -32,10 +34,10 @@ function AboutSBDBody() {
         </p>
 
         <h3>
-            Learn more about Silent But Deadly at out company page <a href ="#">here.</a>
+            Learn more about Silent But Deadly at out company page <a href ="www.QACINEMA.com">here.</a>
         </h3>
 
-        <h3>If you wish to contact us with any enquiries or suggestions, please do so on our <a href="#">Contact Page</a></h3>
+        <h3>If you wish to contact us with any enquiries or suggestions, please do so on our <a href="contactus.html">Contact Page</a></h3>
         </div>
     )
 }
