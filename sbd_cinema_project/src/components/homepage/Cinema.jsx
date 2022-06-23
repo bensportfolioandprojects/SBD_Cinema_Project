@@ -1,9 +1,10 @@
 // import Listing from "./Listing";
 // import CarouselBtn from "./CarouselBtn";
-import DefaultImg from '../../resources/PureSeduction.jpg';
-import DefaultImg2 from '../../resources/tw1sted.png';
+import BeeMovie from '../../resources/BMovieDemo.png';
+import Shrek from '../../resources/shrekDemo.png';
+import Morbius from '../../resources/morbiusDemo.png';
 import Carousel from 'react-bootstrap/Carousel';
-import {useState} from "react";
+import { useState } from "react";
 
 const Cinema = () => {
 
@@ -31,7 +32,7 @@ const Cinema = () => {
     //        img: DefaultImg2,
     //     }
     // ]
-    
+
     // let func = (val, inc, setter) => {
     //     if (val + inc < 1){
     //         setter(4);
@@ -41,7 +42,7 @@ const Cinema = () => {
     //         setter(val + inc)
     //     }
     // };
-    
+
     // function MyComponent(props){
     //     useEffect(()=>{
     //         // do stuff here...
@@ -62,35 +63,43 @@ const Cinema = () => {
     //     },
     // ]
     // return (
-        // <div id="hp-cinema">
-        //     <div id="hp-viewport">
-        //         <CarouselBtn data={buttons[0]}/>
-        //         <CarouselBtn data={buttons[1]}/>
-        //         <Listing data={listings[stateValue-1]}/>
-        //     </div> 
-        // </div> 
+    // <div id="hp-cinema">
+    //     <div id="hp-viewport">
+    //         <CarouselBtn data={buttons[0]}/>
+    //         <CarouselBtn data={buttons[1]}/>
+    //         <Listing data={listings[stateValue-1]}/>
+    //     </div> 
+    // </div> 
     return (
-    <Carousel id="hello" fade>
-        <Carousel.Item>
-            <img src={DefaultImg}/>
-            <Carousel.Caption>
-                <p>Hello</p>
-            </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-            <img src={DefaultImg2}/>
-            <Carousel.Caption>
-                <p>Goodbye</p>
-            </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-            <img src={DefaultImg}/>
-            <Carousel.Caption>
-                <p>Hello</p>
-            </Carousel.Caption>
-        </Carousel.Item>
-    </Carousel>
+        <div id="carouselContainer">
+            <Carousel id="hello" fade>
+                <Carousel.Item>
+                    <a href="#">
+                        <img src={BeeMovie} />
+                    </a>
+                    <Carousel.Caption>
+                        <p></p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <a href="#">
+                        <img src={Shrek} />
+                    </a>
+                    <Carousel.Caption>
+                        <p></p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <a href="#">
+                        <img src={Morbius} />
+                    </a>
+                    <Carousel.Caption>
+                        <p></p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+            </Carousel>
+        </div>
     );
 }
- 
+
 export default Cinema;

@@ -32,20 +32,37 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
-img{
-  width: 20vw;
+img {
+  width: 40vw;
 }
 
-.carousel-control-next, .carousel-control-prev {
-    filter: invert(100%);
+.carousel-control-next,
+.carousel-control-prev {
+  /* filter: invert(100%); */
 }
 
-Component{
-  width: 20vw;
-  height: 20vh;
+
+.carousel {
+  position: relative;
+  width: 40vw;
+  height: 53.3vh;
+  border: solid black;
+}
+
+#carouselContainer {
+  position: relative;
+  border: solid black;
+  background-image: url("https://d1e00ek4ebabms.cloudfront.net/production/96638a9e-dc04-479e-9642-25afae9d6721.jpg");
+  background-size: 75vw 42.2vw;
+  /* left: 12.5vw; */
+  margin: 2.5vh 12.5vw;
+  width: 75vw;
+  height: 42.2vw;
+  padding: 0vh 17.5vw;
 }

@@ -1,5 +1,5 @@
 import LinkWidget from "./LinkWidget";
-import DefaultImg from '../../resources/tw1sted.png';
+import DefaultImg from '../../resources/shrekDemo.png';
 
 const LinkContainer = () => {
     const widgets = [
