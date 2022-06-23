@@ -1,11 +1,11 @@
-var express = require('express');
-var router = express.Router();
-var nodemailer = require('nodemailer');
-var cors = require('cors');
+let express = require('express');
+let router = express.Router();
+let nodemailer = require('nodemailer');
+let cors = require('cors');
 const creds = require('./config');
 
-var transport = {
-    host: 'smtp.gmail.com',
+let transport = {
+    host: 'smtp-mail.outlook.com',
     port: 587,
     auth: {
     user: creds.USER,
@@ -13,7 +13,7 @@ var transport = {
   }
 }
 
-var transporter = nodemailer.createTransport(transport)
+let transporter = nodemailer.createTransport(transport)
 
 transporter.verify((error, success) => {
   if (error) {
@@ -24,14 +24,14 @@ transporter.verify((error, success) => {
 });
 
 router.post('/send', (req, res, next) => {
-  var name = req.body.name
-  var email = req.body.email
-  var message = req.body.message
-  var content = `name: ${name} \n email: ${email} \n message: ${message} `
+  let name = req.body.name
+  let email = req.body.email
+  let message = req.body.message
+  let content = `name: ${name} \n email: ${email} \n message: ${message} `
 
-  var mail = {
+  let mail = {
     from: name,
-    to: 'sbd.qacinemas@gmail.com',
+    to: 'sbd.qacinemas@hotmail.com',
     subject: 'New Message from Contact Form',
     text: content
   }
@@ -47,7 +47,7 @@ router.post('/send', (req, res, next) => {
       })
   
       transporter.sendMail({
-        from: "sbd.qacinemas@gmail.com",
+        from: "sbd.qacinemas@hotmail.com",
         to: email,
         subject: "Submission was successful",
         text: `Thank you for contacting us!\n\nForm details\nName: ${name}\n Email: ${email}\n Message: ${message}`
