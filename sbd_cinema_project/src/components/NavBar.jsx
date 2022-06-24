@@ -60,11 +60,13 @@ const NavBar = () => {
             <Form className="d-flex">
               <FormControl
                 type="search"
-                placeholder="Search"
+                placeholder="Search term"
+                            onFocus={(e) => e.target.placeholder = ''}
+                            onBlur={(e) => e.target.placeholder = 'Search term'}
                 className="me-2"
                 aria-label="Search"
               />
-              <Button variant="outline-success">Search</Button>
+              <Button variant="outline-success" id="searchButton">Search</Button>
             </Form>
           </Offcanvas.Body>
         </Navbar.Offcanvas>
