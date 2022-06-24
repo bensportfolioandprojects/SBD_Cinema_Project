@@ -1,6 +1,7 @@
-import Button from 'react-bootstrap/Button'
+import Button from 'react-bootstrap/Button';
 import SearchResults from './SearchResults';
 import Modal from 'react-bootstrap/Modal';
+import { useState } from 'react';
 
 const SearchBar = ({onSubmit}) => {
 
@@ -15,10 +16,10 @@ const SearchBar = ({onSubmit}) => {
         setIsOpen(false)
     };
 
-    onFormSubmit = (event) => {
-        event.preventDefault()
-        onSubmit(term)
-    }
+    const onFormSubmit = (event) => {
+        event.preventDefault();
+        setIsOpen(true);
+    };
 
     return ( 
         <div className="searcher">
