@@ -16,6 +16,17 @@ const NavBar = () => {
     <Navbar key={expand} bg="light" expand={expand} className="mb-3">
       <Container fluid>
         <Navbar.Brand href="#">QA Cinema</Navbar.Brand>
+        <Form className="d-flex">
+              <FormControl
+                type="search"
+                placeholder="Search term"
+                            onFocus={(e) => e.target.placeholder = ''}
+                            onBlur={(e) => e.target.placeholder = 'Search term'}
+                className="me-2"
+                aria-label="Search"
+              />
+              <Button variant="outline-success" id="searchButton">Search</Button>
+            </Form>
         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
         <Navbar.Offcanvas
           id={`offcanvasNavbar-expand-${expand}`}
@@ -57,17 +68,6 @@ const NavBar = () => {
                 </NavDropdown.Item>
               </NavDropdown>
             </Nav>
-            <Form className="d-flex">
-              <FormControl
-                type="search"
-                placeholder="Search term"
-                            onFocus={(e) => e.target.placeholder = ''}
-                            onBlur={(e) => e.target.placeholder = 'Search term'}
-                className="me-2"
-                aria-label="Search"
-              />
-              <Button variant="outline-success" id="searchButton">Search</Button>
-            </Form>
           </Offcanvas.Body>
         </Navbar.Offcanvas>
       </Container>
