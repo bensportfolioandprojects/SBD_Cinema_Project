@@ -1,13 +1,14 @@
+import VenueCard from "./VenueCard";
 import VenueView from "./VenueView";
 
 
-const VenueList = () => {
+const VenueList = ({data}) => {
     const VenueArray = [
         {
             venueTitle: "Izakaya Monji",
             venueType: "Bar/Tavern",
             venueText: "The tavern opens from evening to midnight. There are counters, tables and zashiki (Japanese tatami room), including karaoke set.",
-            venueImage: "https://www.google.com/maps/uv?pb=!1s0x606ab9e45645a28f%3A0x8481c241112757c0!3m1!7e115!4shttps%3A%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipO1Q8sDfee98q679xX52Yc3wYClRG87J4JCCunY%3Dw213-h160-k-no!5smonji%20izakaya%20-%20Google%20Search!15sCgIgAQ&imagekey=!1e10!2sAF1QipO1Q8sDfee98q679xX52Yc3wYClRG87J4JCCunY&hl=en&sa=X&ved=2ahUKEwijxN-gosH4AhWHecAKHQ2CCZsQoip6BAg4EAM#",
+            venueImage: "https://www.arinoki.com/en/travel/aogashima/photos/p02_17x.jpg",
             venueMap: "https://www.google.com/maps/vt/data=AqHju3Z20BYpAsjyCmvBzA5uI5Eem32nYpuG9o6aI074WkMGjOtACnEk6cxmrIReqWp4YHZn8EcXZL1b8CkDTwukJ0lJf0ma3UITXTQm94-m7nnGuGILa_t9w8kpCoipDu2vrMkLFZK86pBPINxJ1ZxRwlwmZ5GbSHG_nR12NDUa",
             venuePromo: "20% off an adult ticket price with purchase of 2 speciality drinks"
         },
@@ -24,8 +25,13 @@ const VenueList = () => {
     return ( 
         <div className="placesToGoList">
             {
-                VenueArray.map((venues) => {
-                    return <VenueView data={venues}/>
+                VenueArray.map((venues, index) => {
+                    return (
+                    <>
+                    <VenueCard data={venues} key={index}/>
+                    <VenueView data={venues} key={index}/>
+                    </>
+                    )
                 })
             }
         </div>
