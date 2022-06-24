@@ -1,8 +1,13 @@
 const Message = ({data}) => {
     return (
-        <p className="forummessage">
-            {data}
+        <div className="forummessage">
+        <p className="forummessagetitle">
+        {data.movie}
         </p>
+        <p className="forumcontent">
+            {data.username}: {data.message}
+        </p>
+        </div>
     );
 }
  

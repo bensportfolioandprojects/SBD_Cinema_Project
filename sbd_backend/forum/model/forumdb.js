@@ -7,6 +7,16 @@ const forumSchema = new Schema({
         trim: true, 
         maxlength: 200
     },
+    username: {
+        type: String,
+        trim: true, 
+        maxlength: 200
+    },
+    movie: {
+        type: String,
+        trim: true, 
+        maxlength: 200
+    }
 });
 
 const Forum = mongoose.model('Forum', forumSchema);
