@@ -16,6 +16,20 @@ router.get('/getAllByName/:username', async (request, response, next) => {
     
 });
 
+router.get('/getAllMovieTime/:movie/:date/:time', async (request, response, next) => {
+    response.contentType('application/json') 
+            .status(200)
+            .json(await Booking.find({movie: request.params.movie, date: request.params.date, time:request.params.time})); 
+    
+});
+
+router.get('/getAllByMovie/:movie', async (request, response, next) => {
+    response.contentType('application/json') 
+            .status(200)
+            .json(await Booking.find({movie: request.params.movie})); 
+    
+});
+
 router.post('/create', async (request, response, next) => {
     try {
 

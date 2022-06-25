@@ -12,9 +12,20 @@ const bookingSchema = new Schema({
         trim: true, 
         required: true
     },
-    dateandtime:{
-        type: Date,
-        // required: true
+    seats:{
+        type: Number,
+        required: true,
+        min:0
+    },
+    date:{
+        type: String,
+        trim: true,
+        match: /^[2-9][0-9][0-9][0-9]-[0-1][0-9]-[0-3][0-9]$/
+    },
+    time:{
+        type: String,
+        trim: true,
+        match: /^[0-2][0-9]:[0-6][0-9]$/
     },
     adulttickets:{
         type: Number,
