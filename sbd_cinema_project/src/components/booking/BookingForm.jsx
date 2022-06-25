@@ -14,16 +14,9 @@ const BookingForm = () => {
         "14:30", "15:00", "15:30", "16:00", "16:30", "17:00", "17:30", "18:00", "18:30", "19:00",
         "19:30", "20:00", "20:30", "21:00", "21:30", "22:00", "22:30", "23:00", "23:30"];
 
-    const validation = () => {
-
-        console.log("goodbye")
-
-
-
-    }
     const handleSubmit = (event) => {
         event.preventDefault();
-        const url = "http://localhost:3000/booking/create"
+        const url = "http://localhost:3001/booking/create"
         const formdata = {
             username,
             movie,
@@ -37,7 +30,8 @@ const BookingForm = () => {
         let count = 0;
         let maxCap = 2;
         let v = true;
-        const url2 = `http://localhost:3000/booking/getAllMovieTime/${movie}/${date}/${time}`;
+        const url2 = `http://localhost:3001/booking/getAllMovieTime/${movie}/${date}/${time}`;
+        if (time && date && movie && username && (seats !== 0)){
         axios.get(url2)
             .then(res => {
                 console.log(res);
@@ -59,6 +53,9 @@ const BookingForm = () => {
                         }).catch("ERROR POST");
                 }
             }).catch("ERROR GET");
+        } else {
+            alert("All areas need to be filled in")
+        }
     };
 
     return (
