@@ -8,7 +8,7 @@ const Input = ({ getter }) => {
     const handleSubmit = (event) => {
         event.preventDefault();
         if (message) {
-            const url = "http://localhost:3000/forum/create"
+            const url = "http://localhost:3001/forum/create"
             const formdata = {
                 username,
                 movie,
@@ -24,10 +24,13 @@ const Input = ({ getter }) => {
 
     return (
         <form onSubmit={handleSubmit}>
-            <input id="forumInput" type="text" value={movie} onChange={e => setMovie(e.target.value)}></input>
-            <input id="forumInput" type="text" value={username} onChange={e => setUsername(e.target.value)}></input>
-            <input id="forumInput" type="text" value={message} onChange={e => setMessage(e.target.value)}></input>
-            <button id="forumSubmit" value="Submit">Submit</button>
+            <label htmlFor='forummovie'>Movie</label>
+            <input id="forummovie" type="text" value={movie} onChange={e => setMovie(e.target.value)}></input>
+            <label htmlFor='forumusername'>Username</label>
+            <input id="forumusername" type="text" value={username} onChange={e => setUsername(e.target.value)}></input>
+            <label htmlFor='forummessage'>Message</label>
+            <textarea id="forummessage" type="text" value={message} onChange={e => setMessage(e.target.value)}></textarea>
+            <button id="forumsubmit" value="Submit">Submit</button>
         </form>
     );
 }

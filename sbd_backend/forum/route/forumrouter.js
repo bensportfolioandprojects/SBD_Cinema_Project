@@ -1,6 +1,6 @@
 const express = require('express');
 const { builtinModules } = require('module');
-const Forum = require('../model/Forumdb');
+const Forum = require('../model/forum');
 
 const router = express.Router();
 

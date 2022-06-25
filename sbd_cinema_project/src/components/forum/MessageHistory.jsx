@@ -5,16 +5,11 @@ import { useEffect } from 'react';
 
 const MessageHistory = ({data}) => {
     const [messages, setMessages] = useState([]);
-    // let getAll = () => {
-    //     axios.get("http://localhost:3000/forum/getAll")
-    //     .then(res=> {
-    //         setMessages(res.data);
-    //     }).catch((err) => {console.log("Get: ", err)});
-    // }
 
     let getAll =()=>data.getAll();
 
-    //bit of a cheat; updates every second. Not the best solution at all
+    //This creates a singular timeout of updates. GetAll is also set in Input to run every time a new message is sent.
+    //This is to solve constant update issue. Bit messy but functional
     useEffect(() => {
         getAll();
         let timer = setInterval(() =>{

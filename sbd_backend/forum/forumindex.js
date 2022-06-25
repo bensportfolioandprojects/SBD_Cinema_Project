@@ -3,7 +3,7 @@ const morgan = require('morgan');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const forumrouter = require('./route/forumrouter');
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 const DATABASE = 'test';
 const DB_URI = `mongodb://localhost:27017/${DATABASE}`;
 

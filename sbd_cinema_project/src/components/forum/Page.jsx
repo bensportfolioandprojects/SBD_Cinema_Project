@@ -6,7 +6,7 @@ import { useState } from 'react';
 const Page = () => {
     const [messages, setMessages] = useState([]);
     let getAll = () => {
-        axios.get("http://localhost:3000/forum/getAll")
+        axios.get("http://localhost:3001/forum/getAll")
         .then(res=> {
             setMessages(res.data);
         }).catch((err) => {console.log("Get: ", err)});
