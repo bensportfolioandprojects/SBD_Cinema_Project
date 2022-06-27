@@ -5,9 +5,104 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #3B3B3B;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+a:link {
+  color:aquamarine;
+}
+
+a:visited {
+  color: goldenrod;
+}
+
+
+
+/* About-SBD */
+
+.aboutsbdheader--container {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 150%;
+  text-transform: capitalize;
+  font-weight: 700;
+  color: #fff;
+}
+
+.members {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(27, 110, 131, 0.637);
+  font-size: 70%;
+  border: double;
+  border-color: white;
+  background-color: white;
+  border-radius: 10%;
+  align-content: center;
+
+}
+
+.aboutsbdintro {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 130%;
+  /* max-width: 60%; */
+  background-color: rgba(27, 110, 131, 0.637);
+  
+}
+
+.sbdlink {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 200%;
+  font-weight: 700;
+  color: #fff;
+  
+}
+
+.scrumtitle {
+  color: #fff;
+  font-style: italic;
+  
+}
+
+.scruminfo {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  
+
+}
+
+.scrumquote {
+  color: white;
+  border-style: double;
+  border-color: white;
+  width: 50%;
+  height: auto;
+  background-color: rgba(27, 110, 131, 0.637);
+  margin: 10px;
+}
+
+.scrumlogo {
+  max-width: 50%;
+  height: auto;
+  right: 2%;
+  position: fixed;
+  margin-left: 10px;
+}
+
+.sprintinfo {
+  border: double;
+  border-color: white;
+  background-color: rgba(27, 110, 131, 0.637);
+  color: white;
+  text-align: center;
+  height: auto;
+  margin: 10px;
+  
 }
