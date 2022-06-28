@@ -5,9 +5,45 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color:#3b3b3b;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* OPENING TIMES */
+
+.timesTitle {
+  font-family:Helvetica;
+  color:goldenrod;
+}
+
+.timesTable {
+  width:90vw;
+  text-align:center;
+  margin-top:5vw;
+  margin-left:5vw;
+  margin-right:5vw;
+  margin-bottom:1vw;
+  float:left;
+  border-width:5px;
+  border-style:double;
+  border-radius:15px;
+  background-color:#005C73;
+  color:white;
+}
+
+.timesDates {
+  width:90vw;
+  text-align:center;
+  margin-right:5vw;
+  margin-left:5vw;
+  border-width:5px;
+  border-style:double;
+  float:left;
+  border-radius:15px;
+  background-color:#005C73;
+  color:white;
 }
