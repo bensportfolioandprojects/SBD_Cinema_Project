@@ -78,6 +78,11 @@ a:visited {
 
 }
 
+.scrumflex {
+  display: flex;
+  flex-direction: row;
+}
+
 .scrumquote {
   color: white;
   border-style: double;
@@ -85,15 +90,12 @@ a:visited {
   width: 50%;
   height: auto;
   background-color: rgba(27, 110, 131, 0.637);
-  margin: 10px;
 }
 
 .scrumlogo {
-  max-width: 50%;
+  max-width: 40%;
   height: auto;
-  right: 2%;
-  position: fixed;
-  margin-left: 10px;
+  align-self: flex-end;
 }
 
 .sprintinfo {
