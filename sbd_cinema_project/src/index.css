@@ -5,9 +5,49 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #3B3B3B;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.screensbody--container {
+  border: double;
+      border-color: white;
+      margin:20px;
+      background-color: rgba(27, 110, 131, 0.637);
+      font-weight: 600;
+      color: white;
+}
+
+.screensheader--container {
+      margin:20px;
+      font-weight: 600;
+      color: white;
+}
+
+.seatinglayout {
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.seatingtitle {
+  color: white;
+  margin: 20px;
+  
+}
+
+.decor {
+      margin: 30px;
+}
+
+.deluxe {
+  border: double;
+      border-color: white;
+      margin:20px;
+      background-color: rgba(27, 110, 131, 0.637);
+      font-weight: 600;
+      color: white;
 }
