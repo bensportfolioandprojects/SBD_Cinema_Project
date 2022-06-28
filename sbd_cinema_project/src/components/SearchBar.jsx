@@ -25,7 +25,7 @@ const SearchBar = ({onSubmit}) => {
         <div className="searcher">
             <form onSubmit={onFormSubmit} className="searchForm">
                 <div className="searchField">
-                    <input  
+                    <input id="searchBox"  
                     value={term} 
                     onChange={(e) => setTerm(e.target.value)} 
                     type="search"
@@ -35,16 +35,16 @@ const SearchBar = ({onSubmit}) => {
                     className="me-2"
                     aria-label="Search"/>
                 </div>
-                <Button variant="outline-success" id="searchButton">Search</Button>
+                <Button variant="outline-success" id="searchButton" type="submit">Search</Button>
             </form>
             <Modal show={isOpen}>
-                <Modal.Header>
-                    <Modal.Title>Search Results</Modal.Title>
+                <Modal.Header className="modalResults">
+                    <Modal.Title>Search Results: {term}</Modal.Title>
                 </Modal.Header>
-                <Modal.Body>
+                <Modal.Body className="modalResults">
                     <SearchResults data={term}/>
                 </Modal.Body>
-                <Modal.Footer>
+                <Modal.Footer className="modalResults">
                     <Button variant="secondary" onClick={setIsOpenToFalse}>Close</Button>
                 </Modal.Footer>
             </Modal>

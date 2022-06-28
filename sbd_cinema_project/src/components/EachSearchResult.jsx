@@ -1,9 +1,14 @@
 const EachSearchResult = ({movy}) => {
+
     return ( 
-        <>
-            <img src={movy.posterimage} alt={movy.moviename}/>
-            <p>{movy.moviename}</p>
-        </>
+        <div className="movyResults">
+            <div className="movyImage">
+                <img src={movy.posterimage} alt={movy.moviename}/>
+            </div>
+            <div className="movyName">
+                <p>{movy.moviename}</p>
+            </div>
+        </div>
      );
 }
  

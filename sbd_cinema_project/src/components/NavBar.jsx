@@ -5,28 +5,28 @@ import Offcanvas from 'react-bootstrap/Offcanvas'
 import Nav from 'react-bootstrap/Nav'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import SearchBar from "./SearchBar";
+import QACLogo from "../resources/logosbd.png"
 
 
 const NavBar = () => {
   return (
   <>
   {[false].map((expand) => (
-    <Navbar key={expand} bg="light" expand={expand} className="mb-3">
-      <Container fluid>
-        <Navbar.Brand href="#">QA Cinema</Navbar.Brand>
+    <Navbar key={expand} bg="dark" expand={expand} className="navBar">
+      <Container className="navContainer" fluid>
+        <Navbar.Brand  href="#"><img className="logoQAC" alt="QA Cinemas Logo" src={QACLogo} width="100px"/></Navbar.Brand>
         <SearchBar/>
-        <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
-        <Navbar.Offcanvas
-          id={`offcanvasNavbar-expand-${expand}`}
+        <Navbar.Toggle className="navMenuButton" aria-controls={`offcanvasNavbar-expand-${expand}`} />
+        <Navbar.Offcanvas id={`offcanvasNavbar-expand-${expand}`}
           aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
           placement="end"
         >
-          <Offcanvas.Header closeButton>
-            <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
+          <Offcanvas.Header closeButton className="navBarMenu">
+            <Offcanvas.Title  id={`offcanvasNavbarLabel-expand-${expand}`}>
               Menu
             </Offcanvas.Title>
           </Offcanvas.Header>
-          <Offcanvas.Body>
+          <Offcanvas.Body className="navBarBody">
             <Nav className="justify-content-end flex-grow-1 pe-3">
               <Nav.Link href="homepage.html">Homepage</Nav.Link>
               <Nav.Link href="listingsgallery.html">Listing Gallery</Nav.Link>

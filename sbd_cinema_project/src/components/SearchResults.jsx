@@ -16,13 +16,18 @@ const SearchResults = ({data}) => {
     useEffect(() => {
         getMovies();
     }, []);
+
+    if (!movies.length) return <span>No results found</span>
     
     return ( 
         <div className="movieResults">
             {
             movies.map((movy, i) => {
                 return (
-                    <EachSearchResult movy={movy} key={i}/>
+                    <>
+                        <EachSearchResult movy={movy} key={i}/>
+                        <hr/>
+                    </>
                 )
             })}
         </div>
