@@ -36,3 +36,8 @@
     transform: rotate(360deg);
   }
 }
+
+/* Getting There */
+.leaflet-container{
+  height:40vh
+}
