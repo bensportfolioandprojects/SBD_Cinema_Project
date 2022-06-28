@@ -23,14 +23,11 @@ function VenueView({data}) {
             <button className="promoButton" onClick={setIsOpenToTrue}>Click here to view promotions or offers</button>
 
             <Modal show={isOpen}>
-                <Modal.Header>
-                    <Modal.Title>{venueTitle}</Modal.Title>
-                </Modal.Header>
-                <Modal.Body>
+                <Modal.Body id="modalPromo">
                     <VenueCard data={data}/>
                     <VenueImage data={data}/>
                 </Modal.Body>
-                <Modal.Footer>
+                <Modal.Footer id="modalPromo">
                     <Button variant="secondary" onClick={setIsOpenToFalse}>Close</Button>
                 </Modal.Footer>
             </Modal>

@@ -5,9 +5,55 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color:#3b3b3b;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* PLACES TO GO */
+
+.placesToGo {
+  font-family:Helvetica;
+  color:goldenrod;
+}
+
+.placesToGoList {
+  margin-top:5vw;
+}
+
+.venues {
+  border-width:5px;
+  border-style:double;
+  border-radius:15px;
+  background-color:#005C73;
+  color:white;
+  text-align:center;
+  width:90%;
+  margin-left:5%;
+}
+
+.promoButton {
+  border-width:5px;
+  border-style:double;
+  border-radius:15px;
+  background-color:#005C73;
+  color:white;
+  margin-bottom:5vw;
+}
+
+.venueMoreData {
+  border-width:5px;
+  border-style:double;
+  border-radius:15px;
+  text-align:center;
+  background-color:#005C73;
+  color:white;
+  margin:5%;
+}
+
+#modalPromo {
+  background-color: #3b3b3b;
 }

@@ -9,7 +9,7 @@ const VenueCard = ({data}) => {
             </div>
             <div className="venueDetails">
                 <h3>
-                    {venueType}
+                    {venueType}<br/>
                     {venueText}
                 </h3>
             </div>
