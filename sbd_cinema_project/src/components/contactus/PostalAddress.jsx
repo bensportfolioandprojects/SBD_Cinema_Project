@@ -5,18 +5,13 @@ const PostalAddress = () => {
                 <h3>Postal Address</h3>
             </div>
             <div className="postDetails">
-                <ul>
-                    <h4>
-                        <li>QA Cinemas Headquarters</li>
-                        <li>Commercial Wing</li>
-                        <li>Tranquility Base</li>
-                        <li>South West DL Plain</li>
-                        <li>Mare Tranqullitatis</li>
-                        <li>Luna</li>
-                        <hl />
-                        <li>004115 232600</li>
-                    </h4>
-                </ul>
+                QA Cinemas Headquarters <br/>
+                Commercial Wing <br/>
+                Tranquility Base <br/>
+                South West DL Plain <br/>
+                Mare Tranqullitatis <br/>
+                Luna <br/><hr/>
+                004115 232600
             </div>
         </div>
      );

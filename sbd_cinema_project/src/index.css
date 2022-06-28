@@ -5,9 +5,65 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color:#3b3b3b;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* CONTACT US */
+
+.contactTitle {
+  font-family:Helvetica;
+  color:goldenrod;
+}
+
+#emailMessage {
+  color:white;
+  border-bottom-style:dashed;
+  border-color:red;
+}
+
+.Email {
+  background-color:#005C73;
+  border-width:5px;
+  border-style:double;
+  border-radius:15px;
+  width:90vw;
+  margin-top:5vw;
+  margin-left:5vw;
+  margin-right:5vw;
+  margin-bottom:1vw;
+  text-align:center;
+  color:white;
+  padding-top:2vw;
+  padding-bottom:2vw;
+}
+
+.form-control {
+  width:50vw;
+  text-align:left;
+}
+
+.postal {
+  background-color:#005C73;
+  border-width:5px;
+  border-style:double;
+  border-radius:15px;
+  width:90vw;
+  margin-right:5vw;
+  margin-left:5vw;
+  text-align:center;
+  color:white;
+  padding-top:1vw;
+  padding-bottom:1vw;
+}
+
+.formTitle {
+  position:absolute;
+  left:14vw;
+  width:10vw;
+  text-align:right;
 }

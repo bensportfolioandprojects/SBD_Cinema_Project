@@ -13,7 +13,7 @@ function Email() {
 
     const popover = (
         <Popover id="popover-basic">
-            <Popover.Body>
+            <Popover.Body id="emailMessage">
                 {value}
             </Popover.Body>
         </Popover>
@@ -52,15 +52,19 @@ function Email() {
         <div className="Email">
             <form id="contact-form" method="POST" onSubmit={handleSubmit}>
                 <div className="form-group">
-                    <label htmlFor="name">Name</label>
+                    <label className="formTitle" htmlFor="name">Name: </label>
                     <input type="text" className="form-control" id="name" value={name} onChange={e => setName(e.target.value)} />
                 </div>
                 <div className="form-group">
-                    <label htmlFor="exampleInputEmail1">Email address</label>
+                    <div className="formTitle">
+                        <label htmlFor="exampleInputEmail1">Email address: </label>
+                    </div>
                     <input type="email" className="form-control" id="email" aria-describedby="emailHelp" value={email} onChange={e => setEmail(e.target.value)} />
                 </div>
                 <div className="form-group">
-                    <label htmlFor="message">Message</label>
+                    <div className="formTitle">
+                        <label htmlFor="message">Message: </label>
+                    </div>
                     <textarea className="form-control" rows="5" id="message" value={message} onChange={e => setMessage(e.target.value)} />
                 </div>
                 <OverlayTrigger trigger="click" placement="right" overlay={popover}>
