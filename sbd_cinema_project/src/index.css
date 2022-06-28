@@ -5,9 +5,52 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #3B3B3B;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* New-Releases-Gallery */
+.newreleasesheader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  margin-left: 20px;
+  }
+  
+  .SM {
+    border: double;
+    border-color: white;
+    margin:20px;
+    background-color: rgba(27, 110, 131, 0.637);
+    
+  }
+  
+  .BT {
+    border: double;
+    border-color: white;
+    margin:20px;
+    background-color: rgba(27, 110, 131, 0.637);
+  }
+  
+  .TLT {
+    border: double;
+    border-color: white;
+    margin:20px;
+    background-color: rgba(27, 110, 131, 0.637);
+  }
+  
+  .RCR {
+    border: double;
+    border-color: white;
+    margin:20px;
+    background-color: rgba(27, 110, 131, 0.637);
+  }
+
+  .ReleaseDate {
+    color: white;
+  }
