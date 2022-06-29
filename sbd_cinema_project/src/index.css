@@ -22,11 +22,11 @@ code {
   border-color: white;
   margin: 30px;
   width: auto;
-  height: 60vh;
+  height: auto;
   background-color: rgba(27, 110, 131, 0.637);
   display: flex;
   justify-content: center;
-  padding-top: 40px;
+  padding: 40px 0px;
 }
 
 .entryform {
@@ -61,4 +61,15 @@ code {
 .addinfo {
  padding-top: 100px;
  color: white;
+}
+
+#bookingreftitle {
+  font-size: xx-large;
+  padding-top:20px;
+  display: flex;
+  flex-direction: column;
+}
+
+#bookingref {
+  font-size: large;
 }

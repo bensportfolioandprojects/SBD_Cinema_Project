@@ -11,7 +11,7 @@ const BookingForm = ({data}) => {
     const [adulttickets, setAdult] = useState(0);
     const [childtickets, setChild] = useState(0);
     const [concessions, setConcession] = useState(0);
-    const [bookingid, setBookingid] = useState(v4());
+    const [bookingid, setBookingid] = useState("");
     const remSeats = seats - (adulttickets + childtickets + concessions);
     let times = ["09:30", "10:00", "10:30", "11:00", "11:30", "12:00", "12:30", "13:00", "13:30", "14:00",
         "14:30", "15:00", "15:30", "16:00", "16:30", "17:00", "17:30", "18:00", "18:30", "19:00",
@@ -42,7 +42,7 @@ const BookingForm = ({data}) => {
             bookingid: v4()
         }
         let count = 0;
-        let maxCap = 2;
+        let maxCap = 10;
         const url2 = `http://localhost:3001/booking/getAllMovieTime/${movie}/${date}/${time}`;
         if (time && date && movie && username && (seats !== 0)){
         axios.get(url2)
@@ -54,11 +54,13 @@ const BookingForm = ({data}) => {
                     count += bookings.seats;
                 }
                 if (count + seats > maxCap) {
+                    setBookingid("");
                     alert(`There are not enough seats; there are ${maxCap - count} seats available.`);
-                    setBookingid("NA")
+                    
                 } else if (remSeats !== 0) {
+                    setBookingid("");
                     alert(`Seats do not match tickets.`);
-                    setBookingid("NA")
+                    
                 } else {
                     axios.post(url, formdata)
                         .then(res => {
@@ -107,8 +109,14 @@ const BookingForm = ({data}) => {
                 <label htmlFor="bookingconcession" value="Concessions: ">Concessions: </label>
                 <input type="number" id="bookingconcession" value={concessions} onChange={e => setConcession(parseInt(e.target.value))} />
                 <button type="submit" className="submitbtn">Submit</button>
+                <label id="bookingreftitle">Booking Ref:</label>
+                <label id="bookingref">{bookingid}</label>
+                <p>(This will be needed at checkout)</p>
+                
                 </form>
+                
             </div>
+            
             <p className="addinfo">Bookings can be changed or refunded by contacting us <a href="contactus.html">here.</a> By making a booking with us you agree to our terms and conditions including our right to refuse entry to anyone who eats pizza with pineapple on.</p>
         </div>
     );
