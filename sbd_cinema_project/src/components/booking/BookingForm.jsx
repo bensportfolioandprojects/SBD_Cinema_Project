@@ -14,8 +14,13 @@ const BookingForm = ({data}) => {
     let times = ["09:30", "10:00", "10:30", "11:00", "11:30", "12:00", "12:30", "13:00", "13:30", "14:00",
         "14:30", "15:00", "15:30", "16:00", "16:30", "17:00", "17:30", "18:00", "18:30", "19:00",
         "19:30", "20:00", "20:30", "21:00", "21:30", "22:00", "22:30", "23:00", "23:30"];
-    if (data){
-        times = data;
+    if ({data}.times){
+        times = {data}.times;
+    }
+    
+    let movies = ["Lightyear", "Jurassic World: Dominion", "Doctor Strange in the Multiverse of Madness", "Bullet Train", "SpiderMan: Accross the Spiderverse Part One", "Thor: Love and Thunder", "The Railway Children Return", "Top Gun: Maverick"];
+    if ({data}.movies){
+        movies = {data}.movies;
     }
         
     
@@ -62,35 +67,45 @@ const BookingForm = ({data}) => {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
-            <label htmlFor="bookingname" >Your Name: </label>
-            <input type="text" id="bookingname" value={username} onChange={e => setUsername(e.target.value)} />
-            <label htmlFor="bookingmovie" value="Select your Movie">Movie: </label>
-            <select type="select" id="bookingmovie" value={movie} onChange={e => setMovie(e.target.value)}>
-                <option value="" selected disabled hidden>Pick a movie</option>
-                <option value="Morbin" >Morbin</option>
-            </select>
-            <label htmlFor="bookingdate" >Date and Time: </label>
-            <input type="date" id="bookingdate" value={date} onChange={e => setDate(e.target.value)} />
-            <label htmlFor="bookingtime" >Time: </label>
-            <select id="bookingtime" value={time} onChange={e => setTime(e.target.value)}>
-                <option value="" selected disabled hidden>Pick a time</option>
-                {
-                    times.map((t, i) => {
-                        return <option value={t} key={i}>{t}</option>
-                    })
-                }
-            </select>
-            <label htmlFor="bookingseats" value="Seats:">No of Seats: </label>
-            <input type="number" id="bookingseats" value={seats} onChange={e => setSeats(parseInt(e.target.value))} />
-            <label htmlFor="bookingadult" value="Adult Tickets:">Adult Tickets: </label>
-            <input type="number" id="bookingadult" value={adulttickets} onChange={e => setAdult(parseInt(e.target.value))} />
-            <label htmlFor="bookingchild" value="Child Tickets:">Child Tickets: </label>
-            <input type="number" id="bookingchild" value={childtickets} onChange={e => setChild(parseInt(e.target.value))} />
-            <label htmlFor="bookingconcession" value="Concessions: ">Concessions: </label>
-            <input type="number" id="bookingconcession" value={concessions} onChange={e => setConcession(parseInt(e.target.value))} />
-            <button type="submit">Submit</button>
-        </form>
+        <div>
+            <h1 className="bookingtitle">Booking Form</h1>
+            <div className="bookingform">
+                <form onSubmit={handleSubmit} className="entryform">
+                <label htmlFor="bookingname" >Your Name: </label>
+                <input type="text" id="bookingname" value={username} onChange={e => setUsername(e.target.value)} /><br/>
+                <label htmlFor="bookingmovie" value="Select your Movie">Movie: </label>
+                <select type="select" id="bookingmovie" value={movie} onChange={e => setMovie(e.target.value)}>
+                    <option value="" selected disabled hidden>Pick a movie</option>
+                    {
+                        movies.map((m, i) => {
+                            return <option value={m} key={i}>{m}</option>
+                        })
+                    }
+                </select><br/>
+                <label htmlFor="bookingdate" >Date and Time: </label>
+                <input type="date" id="bookingdate" value={date} onChange={e => setDate(e.target.value)} /><br/>
+                <label htmlFor="bookingtime" >Time: </label>
+                <select id="bookingtime" value={time} onChange={e => setTime(e.target.value)}>
+                    <option value="" selected disabled hidden>Pick a time</option>
+                    {
+                        times.map((t, i) => {
+                            return <option value={t} key={i}>{t}</option>
+                        })
+                    }
+                </select><br/>
+                <label htmlFor="bookingseats" value="Seats:">No of Seats: </label>
+                <input type="number" id="bookingseats" value={seats} onChange={e => setSeats(parseInt(e.target.value))} /><br/>
+                <label htmlFor="bookingadult" value="Adult Tickets:">Adult Tickets: </label>
+                <input type="number" id="bookingadult" value={adulttickets} onChange={e => setAdult(parseInt(e.target.value))} /><br/>
+                <label htmlFor="bookingchild" value="Child Tickets:">Child Tickets: </label>
+                <input type="number" id="bookingchild" value={childtickets} onChange={e => setChild(parseInt(e.target.value))} /><br/>
+                <label htmlFor="bookingconcession" value="Concessions: ">Concessions: </label>
+                <input type="number" id="bookingconcession" value={concessions} onChange={e => setConcession(parseInt(e.target.value))} />
+                <button type="submit" className="submitbtn">Submit</button>
+                </form>
+            </div>
+            <p className="addinfo">Bookings can be changed or refunded by contacting us <a href="contactus.html">here.</a> By making a booking with us you agree to our terms and conditions including our right to refuse entry to anyone who eats pizza with pineapple on.</p>
+        </div>
     );
 }
 
