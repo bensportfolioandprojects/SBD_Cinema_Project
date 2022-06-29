@@ -1,4 +1,5 @@
 import './App.css';
+import './aboutsbd';
 import Classifications from './Classifications';
 
 function App() {
