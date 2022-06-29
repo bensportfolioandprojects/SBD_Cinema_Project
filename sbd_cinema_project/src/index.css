@@ -5,9 +5,60 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #3B3B3B;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.bookingtitle {
+  color: goldenrod;
+}
+
+.bookingform {
+  border: double;
+  border-color: white;
+  margin: 30px;
+  width: auto;
+  height: 60vh;
+  background-color: rgba(27, 110, 131, 0.637);
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.entryform {
+  color: white;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.submitbtn {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: orange;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 40px;
+}
+
+.submitbtn:hover {background-color: goldenrod;}
+
+.submitbtn:active {
+  background-color: salmon;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.addinfo {
+ padding-top: 100px;
+ color: white;
 }
