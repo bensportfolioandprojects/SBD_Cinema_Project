@@ -45,5 +45,46 @@ code {
   float:left;
   border-radius:15px;
   background-color:#005C73;
+
+
+/* Classifications */
+.classTitle {
+  color:goldenrod;
+  font-family:Helvetica;
+  width:100%;
+}
+
+.classificationsList {
+  float:left;
+  margin-left:5vw;
+  margin-right:5vw;
+  width:90vw;
+}
+
+.classData {
+  float:left;
+  text-align: center;
+  background-color:#005C73;
+  width:90vw;
+  margin-bottom:2vw;
+  border-width:5px;
+  border-style:double;
+  border-radius:10px;
+  color:white;
+}
+
+.classIcon {
+  text-align:left;
+  float:left;
+  width:20vw;
+}
+
+.classWords {
+  text-align:center;
+  width:85vw;
+  padding-right: 2vw;
+}
+
+.classBody {
   color:white;
 }

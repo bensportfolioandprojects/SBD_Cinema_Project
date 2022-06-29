@@ -5,7 +5,7 @@ const ClassInfo = ({data}) => {
     return ( 
         <div className="classData">
             <div className="classIcon">
-                <img src={classImage} alt={classTitle} width="250px"/>
+                <img src={classImage} alt={classTitle} width="150px"/>
             </div>
             <div className="classWords">
                 <h2>{classTitle}</h2>
