@@ -13,98 +13,38 @@ code {
     monospace;
 }
 
-/* NARBAR */
+/* GETTING THERE */
 
-.navBar {
-  background-color:#171717;
-  color:white;
+.localTitle {
+  font-family:Helvetica;
+  color:goldenrod;
+  margin-bottom:5vw;
 }
 
-.logoTitle {
-  color:white;
-}
-
-.navBarMenu {
-  background-color: #3b3b3b;
-  color:white;
-}
-
-.navBarBody {
-  background-color: #3b3b3b;
-  color:white;
-}
-.navMenuButton {
+.localBody {
   background-color:#005C73;
-}
-.logoQAC {
-  margin-left:2vw;
-}
-
-/* SEARCH BAR */
-
-.searcher {
-  background-color:#171717;
-  width:40vw;
-  text-align:right;
-}
-
-.searchField {
-  width:30vw;
-  float:left;
-}
-
-#searchBox {
-  width:30vw;
-  height:28px;
-  border-bottom-left-radius:5px;
-  border-top-left-radius:5px;
-}
-
-#searchButton {
-  width:10vw;
-  text-align:center;
-  background-color:#005C73;
-  color:white;
-  border-color:white;
-  border-top-right-radius:5px;
-  border-bottom-right-radius:5px;
-}
-#searchButton:hover {
-  background-color:#157992;
-}
-
-.modalResults {
-  background-color:#3b3b3b;
-  color:white;
-  text-align:center;
-}
-
-.movyResults {
-  background-color:#005C73;
-  border-width:5px;
+  border-radius:15px;
   border-style:double;
-  border-radius:10px;
+  border-width:5px;
+  width:90vw;
+  margin:5vw;
   color:white;
-  text-align:center;
-  height:15vw;
 }
 
-.movyImage {
-  position:absolute;
-  left:0vw;
-  width:15vw;
-  padding:2vw;
-  height:14vw;
-  border-width:2px;
-  border-right-style:solid;
-  border-color:white;
+#map {
+  width:90vw;
+  margin-left:5vw;
+  margin-right:5vw;
+  margin-bottom:2vw;
+  border-style:double;
+  border-width:5px;
+  border-radius:15px;
+  color:white;
 }
 
-.movyName {
-  font-size:24pt;
-  padding-left:15vw;
-  padding-top:5vw;
-  padding-right:5vw;
-  padding-bottom:5vw;
-  text-align:center;
+#localCinema {
+  border-style:double;
+  border-width:5px;
+  border-radius:15px;
+  color:white;
 }
