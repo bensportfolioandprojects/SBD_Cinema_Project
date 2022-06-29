@@ -54,3 +54,43 @@ code {
   .ReleaseDate {
     color: white;
   }
+
+.screensbody--container {
+  border: double;
+      border-color: white;
+      margin:20px;
+      background-color: rgba(27, 110, 131, 0.637);
+      font-weight: 600;
+      color: white;
+}
+
+.screensheader--container {
+      margin:20px;
+      font-weight: 600;
+      color: white;
+}
+
+.seatinglayout {
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.seatingtitle {
+  color: white;
+  margin: 20px;
+  
+}
+
+.decor {
+      margin: 30px;
+}
+
+.deluxe {
+  border: double;
+      border-color: white;
+      margin:20px;
+      background-color: rgba(27, 110, 131, 0.637);
+      font-weight: 600;
+      color: white;
+}
+
