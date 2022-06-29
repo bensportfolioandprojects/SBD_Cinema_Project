@@ -7,7 +7,7 @@ return (
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src="https://cdn.celluloidjunkie.com/wp-content/uploads/2019/10/22013848/imax-general-image.jpg"
+      src="https://cdn.celluloidjunkie.com/wp-content/uploads/2019/10/22013848/imax-general-image.jpg" height={600}
       alt="First slide"
     />
     <Carousel.Caption>
@@ -19,6 +19,7 @@ return (
     <img
       className="d-block w-100"
       src="https://cdn.mos.cms.futurecdn.net/4f8444ebaa6fc2020c1eac94ad6ce663.jpg"
+      height={600}
       alt="Second slide"
     />
 
@@ -31,6 +32,7 @@ return (
     <img
       className="d-block w-100"
       src="https://www.cozylifefurniture.com/wp-content/uploads/2020/02/black-leather-power-recliner-theater-chairs.jpg"
+      height={600}
       alt="Third slide"
     />
 

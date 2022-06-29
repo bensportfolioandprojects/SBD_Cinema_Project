@@ -2,7 +2,7 @@ import OTDates from "./components/openingtimes/OTDates";
 import OTTable from "./components/openingtimes/OTTable";
 import OTTitle from "./components/openingtimes/OTTitle";
 
-const openingtimes = () => {
+const OpeningTimes = () => {
     return ( 
         <>
             <OTTitle/>
@@ -12,4 +12,4 @@ const openingtimes = () => {
      );
 }
  
-export default openingtimes;
+export default OpeningTimes;

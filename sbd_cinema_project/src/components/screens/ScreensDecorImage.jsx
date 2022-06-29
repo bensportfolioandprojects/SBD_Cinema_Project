@@ -2,9 +2,9 @@ import React from "react";
 
 function ScreensDecorImage() {
     return (
-        <div>
+        <div className="decor">
         {/* <img src={"./ScreenLayout.png"} alt="ScreensDecorImage" /> */}
-        <img src="https://conferencing.myvue.com/images/slideshow/conferencing/vip_seating.jpg" alt="ScreensDecorImage" />
+        <img src="https://conferencing.myvue.com/images/slideshow/conferencing/vip_seating.jpg" width={600} alt="ScreensDecorImage" />
         <h6> Our modern decor is designed to make you feel at home, but with a classic twist of cinema style.</h6>
         </div>
     )
