@@ -13,7 +13,6 @@ code {
     monospace;
 }
 
-
 /* Listings-Gallery */
 .header--container {
 display: flex;
@@ -135,5 +134,81 @@ margin-left: 20px;
       background-color: rgba(27, 110, 131, 0.637);
       font-weight: 600;
       color: white;
+}
+
+/* OPENING TIMES */
+
+.timesTitle {
+  font-family:Helvetica;
+  color:goldenrod;
+}
+
+.timesTable {
+  width:90vw;
+  text-align:center;
+  margin-top:5vw;
+  margin-left:5vw;
+  margin-right:5vw;
+  margin-bottom:1vw;
+  float:left;
+  border-width:5px;
+  border-style:double;
+  border-radius:15px;
+  background-color:#005C73;
+  color:white;
+}
+
+.timesDates {
+  width:90vw;
+  text-align:center;
+  margin-right:5vw;
+  margin-left:5vw;
+  border-width:5px;
+  border-style:double;
+  float:left;
+  border-radius:15px;
+  background-color:#005C73;
+
+
+/* Classifications */
+.classTitle {
+  color:goldenrod;
+  font-family:Helvetica;
+  width:100%;
+}
+
+.classificationsList {
+  float:left;
+  margin-left:5vw;
+  margin-right:5vw;
+  width:90vw;
+}
+
+.classData {
+  float:left;
+  text-align: center;
+  background-color:#005C73;
+  width:90vw;
+  margin-bottom:2vw;
+  border-width:5px;
+  border-style:double;
+  border-radius:10px;
+  color:white;
+}
+
+.classIcon {
+  text-align:left;
+  float:left;
+  width:20vw;
+}
+
+.classWords {
+  text-align:center;
+  width:85vw;
+  padding-right: 2vw;
+}
+
+.classBody {
+  color:white;
 }
 
