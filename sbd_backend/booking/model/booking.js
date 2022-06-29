@@ -40,6 +40,10 @@ const bookingSchema = new Schema({
     concessions:{
         type: Number,
         min:0
+    },
+    bookingid:{
+        type: String,
+        trim: true
     }
 });
 

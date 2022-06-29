@@ -16,6 +16,13 @@ router.get('/getAllByName/:username', async (request, response, next) => {
     
 });
 
+router.get('/getAllByBookingId/:bookingid', async (request, response, next) => {
+    response.contentType('application/json') 
+            .status(200)
+            .json(await Booking.find({bookingid: request.params.bookingid})); 
+    
+});
+
 router.get('/getAllMovieTime/:movie/:date/:time', async (request, response, next) => {
     response.contentType('application/json') 
             .status(200)
