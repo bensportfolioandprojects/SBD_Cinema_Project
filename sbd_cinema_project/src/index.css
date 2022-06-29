@@ -13,6 +13,7 @@ code {
     monospace;
 }
 
+
 /* Listings-Gallery */
 .header--container {
 display: flex;
@@ -54,3 +55,85 @@ margin-left: 20px;
 .times {
   color: white;
 }
+
+/* New-Releases-Gallery */
+.newreleasesheader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  margin-left: 20px;
+  }
+  
+  .SM {
+    border: double;
+    border-color: white;
+    margin:20px;
+    background-color: rgba(27, 110, 131, 0.637);
+    
+  }
+  
+  .BT {
+    border: double;
+    border-color: white;
+    margin:20px;
+    background-color: rgba(27, 110, 131, 0.637);
+  }
+  
+  .TLT {
+    border: double;
+    border-color: white;
+    margin:20px;
+    background-color: rgba(27, 110, 131, 0.637);
+  }
+  
+  .RCR {
+    border: double;
+    border-color: white;
+    margin:20px;
+    background-color: rgba(27, 110, 131, 0.637);
+  }
+
+  .ReleaseDate {
+    color: white;
+  }
+
+.screensbody--container {
+  border: double;
+      border-color: white;
+      margin:20px;
+      background-color: rgba(27, 110, 131, 0.637);
+      font-weight: 600;
+      color: white;
+}
+
+.screensheader--container {
+      margin:20px;
+      font-weight: 600;
+      color: white;
+}
+
+.seatinglayout {
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.seatingtitle {
+  color: white;
+  margin: 20px;
+  
+}
+
+.decor {
+      margin: 30px;
+}
+
+.deluxe {
+  border: double;
+      border-color: white;
+      margin:20px;
+      background-color: rgba(27, 110, 131, 0.637);
+      font-weight: 600;
+      color: white;
+}
+
