@@ -5,9 +5,145 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color:#3b3b3b;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* HOME PAGE */
+
+img {
+  width: 40vw;
+  height: 24vh;
+}
+.currentMovies {
+  width: 39vw;
+  height: 24vw;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  margin-top:5vh;
+   filter: invert(0%); 
+}
+
+
+.carousel {
+  width: 40vw;
+  height: 30vh;
+  margin-left:17.5vw;
+  margin-top:1vh;
+  align-self:center;
+  justify-self:center;
+}
+
+
+.carouselContainer {
+  justify-content:center;
+  flex-direction:column;
+}
+
+.homeDiv {
+  width:75vmax;
+  height:42vmax;
+  display:flex;
+  margin: 2.5vh 12.5vw;
+  flex-direction:column;
+  background:url("https://d1e00ek4ebabms.cloudfront.net/production/96638a9e-dc04-479e-9642-25afae9d6721.jpg");
+  background-size:cover;
+  border-style:double;
+  border-width:5px;
+  border-radius:15px;
+  color:white;
+}
+
+.carouselBase {
+ height:27vmax;
+}
+
+.bodyMenu {
+  width: 90vw;
+  margin-left:5vw;
+  display:flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+}
+
+.homeUpcoming {
+  border-style:double;
+  border-width:5px;
+  border-radius:15px;
+  color:white;
+  width:30vw;
+  background-color:#005C73;
+  padding-top:1vh;
+  font-size:18pt;
+  float:left;
+}
+
+.upcomingMovie {
+  width:19vmax;
+  height:auto;
+}
+.bodyMenuCentre {
+  display:flex;
+  flex-wrap: wrap;
+  width:60vmax;
+  text-align:center;
+  padding-left:8vw;
+}
+
+.homeBooking {
+  border-style:double;
+  border-width:5px;
+  border-radius:15px;
+  color:white;
+  width:30vmax;
+  background-color:#005C73;
+  padding-top:1vh;
+  font-size:18pt;
+  float:left;
+}
+
+.homePayment {
+  border-style:double;
+  border-width:5px;
+  border-radius:15px;
+  color:white;
+  width:30vmax;
+  background-color:#005C73;
+  margin-top:4vh;
+  padding-top:1vh;
+  font-size:18pt;
+  float:left;
+}
+
+.homeAbout {
+  border-style:double;
+  border-width:5px;
+  border-radius:15px;
+  color:white;
+  width:30vw;
+  background-color:#005C73;
+  padding-top:1vh;
+  font-size:18pt;
+  float:right;
+}
+
+.homeWidget {
+  width:90vw;
+  background-color:#005C73;
+  border-radius:15px;
+  border-width:5px;
+  border-style:double;
+  color:white;
+  margin-left:5vw;
+  margin-top:1vh;
+}
+
+#hp-widgettitle {
+  font-size:18pt;
 }

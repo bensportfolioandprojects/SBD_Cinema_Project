@@ -5,46 +5,32 @@ const LinkContainer = () => {
     const widgets = [
         {
            link: "#",
-           title: "WIDGET TITLE",
-           img: DefaultImg,
-           desc: "Description"
+           title: "Places To Go",
+           desc: "See great places to visit before or after your film"
         },
         {
             link: "#",
-           title: "WIDGET TITLE",
-           img: DefaultImg,
-           desc: "Description"
+           title: "Contact Us",
+           desc: "Click here to get in touch"
         },
         {
             link: "#",
-           title: "WIDGET TITLE",
-           img: DefaultImg,
-           desc: "Description"
+           title: "Discussion Board",
+           desc: "Post and read messages with other film fans"
         },
         {
             link: "#",
-           title: "WIDGET TITLE",
-           img: DefaultImg,
-           desc: "Description"
-        },
-        {
-            link: "#",
-           title: "WIDGET TITLE",
-           img: DefaultImg,
-           desc: "Description"
-        },
-        {
-            link: "#",
-           title: "WIDGET TITLE",
-           img: DefaultImg,
-           desc: "Description"
+           title: "Classifications",
+           desc: "Click here for information on film classifications and what they mean"
         }
 ]
     return (
-        <div id="cinema">
+        <div>
         {
             widgets.map((widget, i) => {
-                return <LinkWidget data ={widget} key ={i}/>
+                return <div className="homeWidget">
+                    <LinkWidget data ={widget} key ={i}/>
+                </div>
             })
         }
         </div> 
