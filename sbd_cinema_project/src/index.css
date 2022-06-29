@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color:#3b3b3b;
+  background-color: #3B3B3B;
 }
 
 code {
@@ -15,10 +15,231 @@ code {
 
 /* CONTACT US */
 
-.contactTitle {
+
+a:link {
+  color:aquamarine;
+}
+
+a:visited {
+  color: goldenrod;
+}
+
+/* About-SBD */
+
+.aboutsbdheader--container {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 150%;
+  text-transform: capitalize;
+  font-weight: 700;
+  color: #fff;
+}
+
+.members {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(27, 110, 131, 0.637);
+  font-size: 70%;
+  border: double;
+  border-color: white;
+  background-color: white;
+  border-radius: 10%;
+  align-content: center;
+
+}
+
+.aboutsbdintro {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 130%;
+  /* max-width: 60%; */
+  background-color: rgba(27, 110, 131, 0.637);
+  
+}
+
+.sbdlink {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 200%;
+  font-weight: 700;
+  color: #fff;
+  
+}
+
+.scrumtitle {
+  color: #fff;
+  font-style: italic;
+  
+}
+
+.scruminfo {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  
+
+}
+
+.scrumflex {
+  display: flex;
+  flex-direction: row;
+}
+
+.scrumquote {
+  color: white;
+  border-style: double;
+  border-color: white;
+  width: 50%;
+  height: auto;
+  background-color: rgba(27, 110, 131, 0.637);
+}
+
+.scrumlogo {
+  max-width: 40%;
+  height: auto;
+  align-self: flex-end;
+}
+
+.sprintinfo {
+  border: double;
+  border-color: white;
+  background-color: rgba(27, 110, 131, 0.637);
+  color: white;
+  text-align: center;
+  height: auto;
+  margin: 10px;
+  
+}
+
+/* Listings-Gallery */
+.header--container {
+display: flex;
+flex-direction: column;
+justify-content: center;
+color: white;
+margin-left: 20px;
+}
+
+.JWD {
+  border: double;
+  border-color: white;
+  margin:20px;
+  background-color: rgba(27, 110, 131, 0.637);
+  
+}
+
+.Lightyear {
+  border: double;
+  border-color: white;
+  margin:20px;
+  background-color: rgba(27, 110, 131, 0.637);
+}
+
+.TGM {
+  border: double;
+  border-color: white;
+  margin:20px;
+  background-color: rgba(27, 110, 131, 0.637);
+}
+
+.DS {
+  border: double;
+  border-color: white;
+  margin:20px;
+  background-color: rgba(27, 110, 131, 0.637);
+}
+
+.times {
+  color: white;
+}
+
+/* New-Releases-Gallery */
+.newreleasesheader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  margin-left: 20px;
+  }
+  
+  .SM {
+    border: double;
+    border-color: white;
+    margin:20px;
+    background-color: rgba(27, 110, 131, 0.637);
+    
+  }
+  
+  .BT {
+    border: double;
+    border-color: white;
+    margin:20px;
+    background-color: rgba(27, 110, 131, 0.637);
+  }
+  
+  .TLT {
+    border: double;
+    border-color: white;
+    margin:20px;
+    background-color: rgba(27, 110, 131, 0.637);
+  }
+  
+  .RCR {
+    border: double;
+    border-color: white;
+    margin:20px;
+    background-color: rgba(27, 110, 131, 0.637);
+  }
+
+  .ReleaseDate {
+    color: white;
+  }
+
+.screensbody--container {
+  border: double;
+      border-color: white;
+      margin:20px;
+      background-color: rgba(27, 110, 131, 0.637);
+      font-weight: 600;
+      color: white;
+}
+
+.screensheader--container {
+      margin:20px;
+      font-weight: 600;
+      color: white;
+}
+
+.seatinglayout {
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.seatingtitle {
+  color: white;
+  margin: 20px;
+  
+}
+
+.decor {
+      margin: 30px;
+}
+
+.deluxe {
+  border: double;
+      border-color: white;
+      margin:20px;
+      background-color: rgba(27, 110, 131, 0.637);
+      font-weight: 600;
+      color: white;
+}
+
+/* OPENING TIMES */
+
+.timesTitle {
   font-family:Helvetica;
   color:goldenrod;
 }
+
 
 #emailMessage {
   color:white;
@@ -32,6 +253,11 @@ code {
   border-style:double;
   border-radius:15px;
   width:90vw;
+}
+
+.timesTable {
+  width:90vw;
+  text-align:center;
   margin-top:5vw;
   margin-left:5vw;
   margin-right:5vw;
@@ -66,4 +292,65 @@ code {
   left:14vw;
   width:10vw;
   text-align:right;
+  float:left;
+  border-width:5px;
+  border-style:double;
+  border-radius:15px;
+  background-color:#005C73;
+  color:white;
 }
+
+.timesDates {
+  width:90vw;
+  text-align:center;
+  margin-right:5vw;
+  margin-left:5vw;
+  border-width:5px;
+  border-style:double;
+  float:left;
+  border-radius:15px;
+  background-color:#005C73;
+}
+
+/* Classifications */
+.classTitle {
+  color:goldenrod;
+  font-family:Helvetica;
+  width:100%;
+}
+
+.classificationsList {
+  float:left;
+  margin-left:5vw;
+  margin-right:5vw;
+  width:90vw;
+}
+
+.classData {
+  float:left;
+  text-align: center;
+  background-color:#005C73;
+  width:90vw;
+  margin-bottom:2vw;
+  border-width:5px;
+  border-style:double;
+  border-radius:10px;
+  color:white;
+}
+
+.classIcon {
+  text-align:left;
+  float:left;
+  width:20vw;
+}
+
+.classWords {
+  text-align:center;
+  width:85vw;
+  padding-right: 2vw;
+}
+
+.classBody {
+  color:white;
+}
+
