@@ -14,7 +14,7 @@ const MessageHistory = ({data}) => {
         getAll();
         let timer = setInterval(() =>{
             getAll();
-        }, 1000);
+        }, 10000);
         return () => { clearTimeout(timer);}
     }, []);
 

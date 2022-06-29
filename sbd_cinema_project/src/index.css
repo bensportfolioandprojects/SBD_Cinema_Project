@@ -5,9 +5,76 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color:#3b3b3b;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* DISCUSSION BOARD */
+
+.discussionTitle {
+  font-family:Helvetica;
+  color:goldenrod;
+}
+
+.forummessage {
+  width:85vw;
+  background-color:#92d5f7;
+  border-radius:15px;
+  border-style:double;
+  border-width:5px;
+  border-color:white;
+  color:black;
+  margin-left:2vw;
+  margin-top:2vh;
+}
+
+.forummessagetitle {
+  border-bottom-width:1px;
+  border-bottom-style:solid;
+  border-color:white;
+  color:black;
+}
+
+.forumInput {
+  width:90vw;
+  background-color:#005C73;
+  border-radius:15px;
+  border-style:double;
+  border-width:5px;
+  color:white;
+  margin:5vh 5vw;
+  height:fit-content;
+}
+
+#forummovie {
+  width:15vw;
+  margin-right:2vw;
+  margin-bottom:2vh;
+}
+
+#forumusername {
+  width:15vw;
+  margin-right:2vw;
+}
+
+#forummessage {
+  margin-top:2vh;
+  width:20vw;
+}
+
+.allMessages {
+  margin-left:5vw;
+  margin-right:5vw;
+  width:90vw;
+  height:50vh;
+  overflow:scroll;
+  border-style:double;
+  border-width:5px;
+  border-radius:15px;
+  color:white;
+  background-color:#005C73;
 }

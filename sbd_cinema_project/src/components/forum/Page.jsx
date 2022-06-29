@@ -2,6 +2,7 @@ import MessageHistory from "./MessageHistory";
 import Input from "./Input";
 import axios from 'axios';
 import { useState } from 'react';
+import ForumTitle from "../ForumTitle";
 
 const Page = () => {
     const [messages, setMessages] = useState([]);
@@ -13,8 +14,11 @@ const Page = () => {
     }
     return (
     <>
-        <MessageHistory data={{messages, getAll}}/>
+        <ForumTitle/>
         <Input getter={getAll}/>
+        <div className="allMessages">
+            <MessageHistory data={{messages, getAll}}/>
+        </div>
     </>
     );
 }
