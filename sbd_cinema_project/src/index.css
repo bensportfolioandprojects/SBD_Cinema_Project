@@ -13,6 +13,49 @@ code {
     monospace;
 }
 
+
+/* Listings-Gallery */
+.header--container {
+display: flex;
+flex-direction: column;
+justify-content: center;
+color: white;
+margin-left: 20px;
+}
+
+.JWD {
+  border: double;
+  border-color: white;
+  margin:20px;
+  background-color: rgba(27, 110, 131, 0.637);
+  
+}
+
+.Lightyear {
+  border: double;
+  border-color: white;
+  margin:20px;
+  background-color: rgba(27, 110, 131, 0.637);
+}
+
+.TGM {
+  border: double;
+  border-color: white;
+  margin:20px;
+  background-color: rgba(27, 110, 131, 0.637);
+}
+
+.DS {
+  border: double;
+  border-color: white;
+  margin:20px;
+  background-color: rgba(27, 110, 131, 0.637);
+}
+
+.times {
+  color: white;
+}
+
 /* New-Releases-Gallery */
 .newreleasesheader {
   display: flex;
