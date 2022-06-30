@@ -51,7 +51,6 @@ code {
    filter: invert(0%); 
 }
 
-
 .carousel {
   width: 40vw;
   height: 30vh;
@@ -60,7 +59,6 @@ code {
   align-self:center;
   justify-self:center;
 }
-
 
 .carouselContainer {
   justify-content:center;
@@ -658,6 +656,7 @@ margin-left: 20px;
   font-size:18pt;
 }
 
+/* booking */
 .bookingtitle {
   color: goldenrod;
 }
