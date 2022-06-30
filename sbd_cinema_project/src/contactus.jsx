@@ -2,7 +2,7 @@ import ContactTitle from './components/contactus/ContactTitle';
 import Email from './components/contactus/Email';
 import PostalAddress from './components/contactus/PostalAddress';
 
-const contactus = () => {
+const ContactUs = () => {
     return ( 
         <>
             <ContactTitle />
@@ -12,4 +12,4 @@ const contactus = () => {
      );
 }
  
-export default contactus;
+export default ContactUs;

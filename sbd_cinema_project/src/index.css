@@ -18,6 +18,7 @@ code {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* GETTING THERE */
 
 .localTitle {
@@ -54,6 +55,10 @@ code {
   color:white;
 }
 =======
+=======
+/* CONTACT US */
+
+>>>>>>> e6b519d96e79c9ef7d94220b4f9b579b9041ccde
 
 a:link {
   color:aquamarine;
@@ -279,6 +284,21 @@ margin-left: 20px;
   color:goldenrod;
 }
 
+
+#emailMessage {
+  color:white;
+  border-bottom-style:dashed;
+  border-color:darkred;
+}
+
+.Email {
+  background-color:#005C73;
+  border-width:5px;
+  border-style:double;
+  border-radius:15px;
+  width:90vw;
+}
+
 .timesTable {
   width:90vw;
   text-align:center;
@@ -286,6 +306,36 @@ margin-left: 20px;
   margin-left:5vw;
   margin-right:5vw;
   margin-bottom:1vw;
+  text-align:center;
+  color:white;
+  padding-top:2vw;
+  padding-bottom:2vw;
+}
+
+.form-control {
+  width:50vw;
+  text-align:left;
+}
+
+.postal {
+  background-color:#005C73;
+  border-width:5px;
+  border-style:double;
+  border-radius:15px;
+  width:90vw;
+  margin-right:5vw;
+  margin-left:5vw;
+  text-align:center;
+  color:white;
+  padding-top:1vw;
+  padding-bottom:1vw;
+}
+
+.formTitle {
+  position:absolute;
+  left:14vw;
+  width:10vw;
+  text-align:right;
   float:left;
   border-width:5px;
   border-style:double;
@@ -304,7 +354,7 @@ margin-left: 20px;
   float:left;
   border-radius:15px;
   background-color:#005C73;
-
+}
 
 /* Classifications */
 .classTitle {
