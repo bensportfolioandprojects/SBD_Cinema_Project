@@ -6,6 +6,7 @@ import logo from './logo.svg';
 import Page from './components/forum/Page';
 import './App.css';
 import NavBar from './components/NavBar';
+import PaymentDetails from './components/payment/PaymentDetails';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
     <HomePage/>
         <BookingPage/>
       <Page/>
+      <PaymentDetails/>
     </div>
   );
 }

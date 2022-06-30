@@ -1,6 +1,7 @@
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
   "name": "sbd_backend",
@@ -16,11 +17,28 @@
   "scripts": {
     "start": "node ./booking/bookingindex.js",
 >>>>>>> Ticket-Bookings
+=======
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "i": "^0.3.7",
+    "npm": "^8.13.2",
+    "stripe": "^9.11.0"
+  },
+  "name": "sbd_backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./payment/index.js",
+>>>>>>> Payment
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+<<<<<<< HEAD
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.18.1",
@@ -153,4 +171,7 @@
   "license": "ISC"
 >>>>>>> 1e86c54d7beec47a949a8574623d7b169fe0aeff
 >>>>>>> 329f27f75780ac446d813cb9da78d27429105c95
+=======
+  "description": ""
+>>>>>>> Payment
 }
