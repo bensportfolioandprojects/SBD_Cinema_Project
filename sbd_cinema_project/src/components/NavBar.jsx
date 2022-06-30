@@ -5,9 +5,8 @@ import Offcanvas from 'react-bootstrap/Offcanvas'
 import Nav from 'react-bootstrap/Nav'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import SearchBar from "./SearchBar";
-import ListingsGalleryLayout from '../listingsgallerylayout';
 import QACLogo from "../resources/logosbd.png"
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 
 const NavBar = () => {
@@ -52,6 +51,10 @@ const NavBar = () => {
                 <NavDropdown.Divider />
                 <NavDropdown.Item className="navDrop">
                   <NavLink to="openingtimes" title="Opening Times">Opening Times</NavLink>
+                </NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item className="navDrop">
+                  <NavLink to="gettingthere" title="Getting There">Getting There</NavLink>
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item className="navDrop">
