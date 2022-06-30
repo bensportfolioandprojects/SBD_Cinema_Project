@@ -11,6 +11,7 @@ const PORT = process.env.PORT || 3001;
 const DATABASE = 'test';
 const DB_URI = `mongodb://localhost:27017/${DATABASE}`;
 
+
 const app = express();
 app.use(morgan('dev'));
 app.use(cors());
@@ -20,6 +21,7 @@ app.use('/booking', bookingrouter);
 app.use('/forum', forumrouter);
 app.use('/payment', paymentrouter);
 app.use('/contact', contactrouter);
+
 
 
 app.use(function (error, request, response, next) {

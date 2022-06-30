@@ -23,7 +23,7 @@ const CheckoutForm = ({data}) => {
             try {
                 const { id } = paymentMethod;
                 const response = await axios.post(
-                  "http://localhost:8080/stripe/charge",
+                  "http://localhost:3001/payment/stripe/charge",
                   {
                     amount: parseInt(data),
                     id: id,

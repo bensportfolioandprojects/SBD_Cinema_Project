@@ -2,8 +2,12 @@
 //as such, code is heavily used from that work
 const express = require("express");
 const router = express.Router();
-const Stripe = require("stripe")
+const Stripe = require("stripe");
+require("dotenv").config();
+
 const stripe = Stripe(process.env.STRIPE_SECRET_TEST);
+
+console.log("KEY", process.env.STRIPE_SECRET_TEST)
 
 router.post("/stripe/charge", async (req, res) => {
   console.log("stripe-routes.js 9 | route reached", req.body);
