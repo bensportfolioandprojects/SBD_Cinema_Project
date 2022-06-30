@@ -3,7 +3,7 @@ import Carousel from 'react-bootstrap/Carousel'
 
 const ScreensCarousel = () => {
 return (
-    <Carousel>
+    <Carousel className="screenCarousel">
   <Carousel.Item>
     <img
       className="d-block w-100"
