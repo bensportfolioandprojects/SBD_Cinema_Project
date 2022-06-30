@@ -5,23 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
   background-color:#3b3b3b;
-=======
-  background-color: #3B3B3B;
->>>>>>> dev
-=======
-  background-color:#3b3b3b;
->>>>>>> Places-To-Go
-=======
-  background-color:#3b3b3b;
->>>>>>> Home-Page
-=======
-  background-color:#3b3b3b;
->>>>>>> 1e86c54d7beec47a949a8574623d7b169fe0aeff
 }
 
 code {
@@ -29,11 +13,6 @@ code {
     monospace;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 /* GETTING THERE */
 
 .localTitle {
@@ -57,13 +36,10 @@ code {
   margin-left:5vw;
   margin-right:5vw;
   margin-bottom:2vw;
-=======
+}
+
 /* HOME PAGE */
 
-img {
-  width: 40vw;
-  height: 24vh;
-}
 .currentMovies {
   width: 39vw;
   height: 24vw;
@@ -118,12 +94,10 @@ img {
 }
 
 .homeUpcoming {
->>>>>>> Home-Page
   border-style:double;
   border-width:5px;
   border-radius:15px;
   color:white;
-<<<<<<< HEAD
 }
 
 #localCinema {
@@ -132,11 +106,9 @@ img {
   border-radius:15px;
   color:white;
 }
-=======
-=======
-/* CONTACT US */
 
->>>>>>> e6b519d96e79c9ef7d94220b4f9b579b9041ccde
+
+/* CONTACT US */
 
 a:link {
   color:aquamarine;
@@ -145,6 +117,61 @@ a:link {
 a:visited {
   color: goldenrod;
 }
+
+.contactTitle {
+  font-family:Helvetica;
+  color:goldenrod;
+}
+
+#emailMessage {
+  color:white;
+  border-bottom-style:dashed;
+  border-color:red;
+}
+
+.Email {
+  background-color:#005C73;
+  border-width:5px;
+  border-style:double;
+  border-radius:15px;
+  width:90vw;
+  margin-top:5vw;
+  margin-left:5vw;
+  margin-right:5vw;
+  margin-bottom:1vw;
+  text-align:center;
+  color:white;
+  padding-top:2vw;
+  padding-bottom:2vw;
+}
+
+.form-control {
+  width:50vw;
+  text-align:left;
+  margin-left:20vw;
+}
+
+.postal {
+  background-color:#005C73;
+  border-width:5px;
+  border-style:double;
+  border-radius:15px;
+  width:90vw;
+  margin-right:5vw;
+  margin-left:5vw;
+  text-align:center;
+  color:white;
+  padding-top:1vw;
+  padding-bottom:1vw;
+}
+
+.formTitle {
+  position:absolute;
+  left:14vw;
+  width:10vw;
+  text-align:right;
+} 
+
 
 /* About-SBD */
 
@@ -316,6 +343,17 @@ margin-left: 20px;
     color: white;
   }
 
+/* SCREENS */
+
+.screenCarousel {
+  width:65vmax;
+  height:50%;
+  border-style:double;
+  border-width:5px;
+  border-color:white;
+  border-radius:15px;
+}
+
 .screensbody--container {
   border: double;
       border-color: white;
@@ -358,74 +396,23 @@ margin-left: 20px;
 /* OPENING TIMES */
 
 .timesTitle {
-=======
-/* DISCUSSION BOARD */
-
-.discussionTitle {
->>>>>>> 1e86c54d7beec47a949a8574623d7b169fe0aeff
   font-family:Helvetica;
   color:goldenrod;
-}
-
-<<<<<<< HEAD
-
-#emailMessage {
-  color:white;
-  border-bottom-style:dashed;
-  border-color:darkred;
-}
-
-.Email {
-  background-color:#005C73;
-  border-width:5px;
-  border-style:double;
-  border-radius:15px;
-  width:90vw;
 }
 
 .timesTable {
   width:90vw;
   text-align:center;
-  margin-top:5vw;
-  margin-left:5vw;
   margin-right:5vw;
-  margin-bottom:1vw;
-  text-align:center;
-  color:white;
-  padding-top:2vw;
-  padding-bottom:2vw;
-}
-
-.form-control {
-  width:50vw;
-  text-align:left;
-}
-
-.postal {
-  background-color:#005C73;
+  margin-left:5vw;
   border-width:5px;
   border-style:double;
-  border-radius:15px;
-  width:90vw;
-  margin-right:5vw;
-  margin-left:5vw;
-  text-align:center;
   color:white;
-  padding-top:1vw;
-  padding-bottom:1vw;
-}
-
-.formTitle {
-  position:absolute;
-  left:14vw;
-  width:10vw;
-  text-align:right;
   float:left;
-  border-width:5px;
-  border-style:double;
   border-radius:15px;
   background-color:#005C73;
-  color:white;
+  padding:2vh;
+  font-size:16pt;
 }
 
 .timesDates {
@@ -435,8 +422,76 @@ margin-left: 20px;
   margin-left:5vw;
   border-width:5px;
   border-style:double;
+  color:white;
   float:left;
+  margin-top:3vh;
   border-radius:15px;
+  background-color:#005C73;
+}
+
+/* DISCUSSION BOARD */
+
+.discussionTitle {
+  font-family:Helvetica;
+  color:goldenrod;
+}
+
+.forummessage {
+  width:85vw;
+  background-color:#92d5f7;
+  border-radius:15px;
+  border-style:double;
+  border-width:5px;
+  border-color:white;
+  color:black;
+  margin-left:2vw;
+  margin-top:2vh;
+}
+
+.forummessagetitle {
+  border-bottom-width:1px;
+  border-bottom-style:solid;
+  border-color:white;
+  color:black;
+}
+
+.forumInput {
+  width:90vw;
+  background-color:#005C73;
+  border-radius:15px;
+  border-style:double;
+  border-width:5px;
+  color:white;
+  margin:5vh 5vw;
+  height:fit-content;
+}
+
+#forummovie {
+  width:15vw;
+  margin-right:2vw;
+  margin-bottom:2vh;
+}
+
+#forumusername {
+  width:15vw;
+  margin-right:2vw;
+}
+
+#forummessage {
+  margin-top:2vh;
+  width:20vw;
+}
+
+.allMessages {
+  margin-left:5vw;
+  margin-right:5vw;
+  width:90vw;
+  height:50vh;
+  overflow:scroll;
+  border-style:double;
+  border-width:5px;
+  border-radius:15px;
+  color:white;
   background-color:#005C73;
 }
 
@@ -462,28 +517,27 @@ margin-left: 20px;
   margin-bottom:2vw;
   border-width:5px;
   border-style:double;
-  border-radius:10px;
+  border-radius:15px;
   color:white;
 }
 
 .classIcon {
-  text-align:left;
   float:left;
-  width:20vw;
+  width:20vmax;
 }
 
 .classWords {
   text-align:center;
   width:85vw;
   padding-right: 2vw;
+  padding-left:30vw;
 }
 
 .classBody {
   color:white;
 }
 
->>>>>>> dev
-=======
+
 /* PLACES TO GO */
 
 .placesToGo {
@@ -528,8 +582,10 @@ margin-left: 20px;
 #modalPromo {
   background-color: #3b3b3b;
 }
->>>>>>> Places-To-Go
-=======
+
+
+/* HOME PAGE */
+.homeUpcoming {
   width:30vw;
   background-color:#005C73;
   padding-top:1vh;
@@ -595,69 +651,113 @@ margin-left: 20px;
   color:white;
   margin-left:5vw;
   margin-top:1vh;
+  margin-bottom:1vh;
 }
 
 #hp-widgettitle {
   font-size:18pt;
 }
->>>>>>> Home-Page
-=======
-.forummessage {
-  width:85vw;
-  background-color:#92d5f7;
-  border-radius:15px;
-  border-style:double;
-  border-width:5px;
-  border-color:white;
-  color:black;
+
+/* NARBAR */
+
+.navBar {
+  background-color:#171717;
+  color:white;
+}
+
+.logoTitle {
+  color:white;
+}
+
+.navBarMenu {
+  background-color: #3b3b3b;
+  color:white;
+}
+
+.navBarBody {
+  background-color: #3b3b3b;
+  color:white;
+}
+.navMenuButton {
+  height:5vh;
+  width:5vw;
+  background-color:#005C73;
+}
+.logoQAC {
+  width:50%;
+  height:auto;
   margin-left:2vw;
-  margin-top:2vh;
 }
 
-.forummessagetitle {
-  border-bottom-width:1px;
-  border-bottom-style:solid;
+.navDrop {
+  background-color:#3b3b3b;
+}
+
+/* SEARCH BAR */
+
+.searcher {
+  background-color:#171717;
+  width:40vw;
+  text-align:right;
+}
+
+.searchField {
+  width:30vw;
+  float:left;
+}
+
+#searchBox {
+  width:30vw;
+  height:28px;
+  border-bottom-left-radius:5px;
+  border-top-left-radius:5px;
+}
+
+#searchButton {
+  width:10vw;
+  text-align:center;
+  background-color:#005C73;
+  color:white;
   border-color:white;
-  color:black;
+  border-top-right-radius:5px;
+  border-bottom-right-radius:5px;
+}
+#searchButton:hover {
+  background-color:#157992;
 }
 
-.forumInput {
-  width:90vw;
-  background-color:#005C73;
-  border-radius:15px;
-  border-style:double;
-  border-width:5px;
+.modalResults {
+  background-color:#3b3b3b;
   color:white;
-  margin:5vh 5vw;
-  height:fit-content;
+  text-align:center;
 }
 
-#forummovie {
-  width:15vw;
-  margin-right:2vw;
-  margin-bottom:2vh;
-}
-
-#forumusername {
-  width:15vw;
-  margin-right:2vw;
-}
-
-#forummessage {
-  margin-top:2vh;
-  width:20vw;
-}
-
-.allMessages {
-  margin-left:5vw;
-  margin-right:5vw;
-  width:90vw;
-  height:50vh;
-  overflow:scroll;
-  border-style:double;
-  border-width:5px;
-  border-radius:15px;
-  color:white;
+.movyResults {
   background-color:#005C73;
+  border-width:5px;
+  border-style:double;
+  border-radius:10px;
+  color:white;
+  text-align:center;
+  height:15vw;
 }
->>>>>>> 1e86c54d7beec47a949a8574623d7b169fe0aeff
+
+.movyImage {
+  position:absolute;
+  left:0vw;
+  width:15vw;
+  padding:2vw;
+  height:14vw;
+  border-width:2px;
+  border-right-style:solid;
+  border-color:white;
+}
+
+.movyName {
+  font-size:24pt;
+  padding-left:15vw;
+  padding-top:5vw;
+  padding-right:5vw;
+  padding-bottom:5vw;
+  text-align:center;
+} 

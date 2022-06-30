@@ -1,9 +1,11 @@
+import { NavLink } from 'react-router-dom';
+
 const HomeAbout = () => {
     return ( 
         <div className="homeAbout">
-            <a href="#">
+            <NavLink to="./about">
                 <p>About</p>
-            </a>
+            </NavLink>
         </div>
      );
 }
