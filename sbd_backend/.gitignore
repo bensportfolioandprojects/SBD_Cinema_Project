@@ -32,4 +32,8 @@ yarn-error.log*
 >>>>>>> Home-Page
 =======
 /node_modules
+<<<<<<< HEAD
 >>>>>>> Ticket-Bookings
+=======
+>>>>>>> 1e86c54d7beec47a949a8574623d7b169fe0aeff
+>>>>>>> 329f27f75780ac446d813cb9da78d27429105c95

@@ -1,11 +1,11 @@
 import HomePage from "./components/homepage/Page"
 import logo from './logo.svg';
 import BookingPage from './components/booking/Page'
+import { BRowserRouter, Routes, Route } from 'react-router-dom';
+import logo from './logo.svg';
+import Page from './components/forum/Page';
 import './App.css';
-import GettingThere from './components/getting-there/GettingThere';
-import './aboutsbd';
-import Classifications from './Classifications';
-import PlacesToGo from './PlacesToGo'
+import NavBar from './components/NavBar';
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
       <PlacesToGo/>      
     <HomePage/>
         <BookingPage/>
+      <Page/>
     </div>
   );
 }
