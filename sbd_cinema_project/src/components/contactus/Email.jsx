@@ -31,7 +31,7 @@ function Email() {
             setValue("Valid Email address");
 
         return await axios({
-            url: 'http://localhost:3002/send',
+            url: 'http://localhost:3001/contact/send',
             method: "POST",
             headers: {
                 'Accept': 'application/json',

@@ -12,7 +12,7 @@ const CheckoutForm = ({data}) => {
     
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const url ="http://localhost:8080/stripe/charge";
+        const url ="http://localhost:3001/payment/stripe/charge";
         
         const {error, paymentMethod} = await stripe.createPaymentMethod({
             type: "card",

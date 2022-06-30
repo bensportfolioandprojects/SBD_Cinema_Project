@@ -5,8 +5,8 @@ const cors = require('cors');
 const movierouter = require('./movie/route/movierouter');
 const bookingrouter = require('./booking/route/bookingrouter');
 const forumrouter = require('./forum/route/forumrouter');
-const payment = require('./payment/paymentindex');
-const contact = require('./contactus/contact');
+const paymentrouter = require('./payment/paymentrouter');
+const contactrouter = require('./contactus/contactrouter');
 const PORT = process.env.PORT || 3001;
 const DATABASE = 'test';
 const DB_URI = `mongodb://localhost:27017/${DATABASE}`;
@@ -18,6 +18,8 @@ app.use(express.json());
 app.use('/movie', movierouter);
 app.use('/booking', bookingrouter);
 app.use('/forum', forumrouter);
+app.use('/payment', paymentrouter);
+app.use('/contact', contactrouter);
 
 
 app.use(function (error, request, response, next) {
