@@ -6,6 +6,7 @@ import Nav from 'react-bootstrap/Nav'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import SearchBar from "./SearchBar";
 import QACLogo from "../resources/logosbd.png"
+import { Link } from 'react-router-dom';
 
 
 const NavBar = () => {
@@ -14,7 +15,11 @@ const NavBar = () => {
   {[false].map((expand) => (
     <Navbar key={expand} bg="dark" expand={expand} className="navBar">
       <Container className="navContainer" fluid>
-        <Navbar.Brand  href="#"><img className="logoQAC" alt="QA Cinemas Logo" src={QACLogo} width="100px"/></Navbar.Brand>
+        <Navbar.Brand>
+          <Link to='/' className="NavBrand">
+            <img className="logoQAC" alt="QA Cinemas Logo" src={QACLogo} width="100px"/>
+          </Link>
+        </Navbar.Brand>
         <SearchBar/>
         <Navbar.Toggle className="navMenuButton" aria-controls={`offcanvasNavbar-expand-${expand}`} />
         <Navbar.Offcanvas id={`offcanvasNavbar-expand-${expand}`}
@@ -28,30 +33,30 @@ const NavBar = () => {
           </Offcanvas.Header>
           <Offcanvas.Body className="navBarBody">
             <Nav className="justify-content-end flex-grow-1 pe-3">
-              <Nav.Link href="homepage.html">Homepage</Nav.Link>
-              <Nav.Link href="listingsgallery.html">Listing Gallery</Nav.Link>
-              <Nav.Link href="newreleasesgallery.html">New Releases</Nav.Link>
-              <Nav.Link href="ticketbookings.html">Book your tickets here</Nav.Link>
-              <Nav.Link href="payment.html">Payment</Nav.Link>
+              <Link as={Link} to="/" title="Home Page">Homepage</Link>
+              <Link as={Link} to="/listingsgallery" title="Listings Gallery">Listing Gallery</Link>
+              <Link href="newreleases">New Releases</Link>
+              <Link href="ticketbookings">Book your tickets here</Link>
+              <Link href="payment">Payment</Link>
               <NavDropdown
                 title="More Info"
                 id={`offcanvasNavbarDropdown-expand-${expand}`}
               >
-                <NavDropdown.Item href="aboutsbd.html">About SBD</NavDropdown.Item>
+                <NavDropdown.Item href="aboutsbd">About SBD</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="classifications.html">
+                <NavDropdown.Item href="classifications">
                   Classifications
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="openingtimes.html">
+                <NavDropdown.Item href="openingtimes">
                   Opening Times
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="placestogo.html">
+                <NavDropdown.Item href="placestogo">
                   Places To Go
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="screens.html">
+                <NavDropdown.Item href="screens">
                   Screens
                 </NavDropdown.Item>
               </NavDropdown>
