@@ -1,7 +1,7 @@
 let express = require('express');
 let router = express.Router();
 let nodemailer = require('nodemailer');
-let cors = require('cors');
+// let cors = require('cors');
 const creds = require('./config');
 
 let transport = {

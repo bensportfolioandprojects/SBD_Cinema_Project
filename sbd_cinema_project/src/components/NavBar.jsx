@@ -5,8 +5,9 @@ import Offcanvas from 'react-bootstrap/Offcanvas'
 import Nav from 'react-bootstrap/Nav'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import SearchBar from "./SearchBar";
+import ListingsGalleryLayout from '../listingsgallerylayout';
 import QACLogo from "../resources/logosbd.png"
-import { Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 
 const NavBar = () => {
@@ -16,9 +17,9 @@ const NavBar = () => {
     <Navbar key={expand} bg="dark" expand={expand} className="navBar">
       <Container className="navContainer" fluid>
         <Navbar.Brand>
-          <Link to='/' className="NavBrand">
+          <NavLink to='/' className="NavBrand">
             <img className="logoQAC" alt="QA Cinemas Logo" src={QACLogo} width="100px"/>
-          </Link>
+          </NavLink>
         </Navbar.Brand>
         <SearchBar/>
         <Navbar.Toggle className="navMenuButton" aria-controls={`offcanvasNavbar-expand-${expand}`} />
@@ -33,31 +34,40 @@ const NavBar = () => {
           </Offcanvas.Header>
           <Offcanvas.Body className="navBarBody">
             <Nav className="justify-content-end flex-grow-1 pe-3">
-              <Link as={Link} to="/" title="Home Page">Homepage</Link>
-              <Link as={Link} to="/listingsgallery" title="Listings Gallery">Listing Gallery</Link>
-              <Link href="newreleases">New Releases</Link>
-              <Link href="ticketbookings">Book your tickets here</Link>
-              <Link href="payment">Payment</Link>
-              <NavDropdown
+              <NavLink to="/" title="Home Page">Homepage</NavLink>
+              <NavLink to="/listingsgallery" title="Listings Gallery">Listing Gallery</NavLink>
+              <NavLink to="newreleases" title="New Releases">New Releases</NavLink>
+              <NavLink to="ticketbooking" title="Ticket Bookings">Book your tickets here</NavLink>
+              <NavLink to="payment" title="Payment">Payment</NavLink>
+              <NavDropdown className="navDrop"
                 title="More Info"
-                id={`offcanvasNavbarDropdown-expand-${expand}`}
-              >
-                <NavDropdown.Item href="aboutsbd">About SBD</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="classifications">
-                  Classifications
+                id={`offcanvasNavbarDropdown-expand-${expand}`}>
+                <NavDropdown.Item className="navDrop">
+                  <NavLink to="about" title="About Us">About SBD</NavLink>
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="openingtimes">
-                  Opening Times
+                <NavDropdown.Item className="navDrop">
+                  <NavLink to="classifications" title="Classifications">Classifications</NavLink>
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="placestogo">
-                  Places To Go
+                <NavDropdown.Item className="navDrop">
+                  <NavLink to="openingtimes" title="Opening Times">Opening Times</NavLink>
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="screens">
-                  Screens
+                <NavDropdown.Item className="navDrop">
+                  <NavLink to="placestogo" title="Places To Go">Places To Go</NavLink>
+                </NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item className="navDrop">
+                  <NavLink to="discussionboard" title="Discussion Board">Discussion Board</NavLink>
+                </NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item className="navDrop">
+                  <NavLink to="screens" title="Screens">Screens</NavLink>
+                </NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item className="navDrop">
+                  <NavLink to="contactus" title="Contact Us">Contact Us</NavLink>
                 </NavDropdown.Item>
               </NavDropdown>
             </Nav>

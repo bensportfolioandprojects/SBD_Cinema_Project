@@ -4,22 +4,22 @@ import DefaultImg from '../../resources/shrekDemo.png';
 const LinkContainer = () => {
     const widgets = [
         {
-           link: "#",
+           link: "./PlacesToGo",
            title: "Places To Go",
            desc: "See great places to visit before or after your film"
         },
         {
-            link: "#",
+            link: "./ContactUs",
            title: "Contact Us",
            desc: "Click here to get in touch"
         },
         {
-            link: "#",
+            link: "./DiscussionBoard",
            title: "Discussion Board",
            desc: "Post and read messages with other film fans"
         },
         {
-            link: "#",
+            link: "./Classifications",
            title: "Classifications",
            desc: "Click here for information on film classifications and what they mean"
         }

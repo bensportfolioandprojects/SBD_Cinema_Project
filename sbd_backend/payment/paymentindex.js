@@ -1,19 +1,19 @@
 //tutorial followed from https://betterprogramming.pub/stripe-api-tutorial-with-react-and-node-js-1c8f2020a825
 //as such, code is heavily used from that work
-// import axios from 'axios';
 const express = require("express");
-const app = express();
-require("dotenv").config();
+const router = express.Router();
+// const app = express();
+// require("dotenv").config();
 const Stripe = require("stripe")
 const stripe = Stripe(process.env.STRIPE_SECRET_TEST);
-const bodyParser = require("body-parser");
-const cors = require("cors");
+// const bodyParser = require("body-parser");
+// const cors = require("cors");
 
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
-app.use(cors());
+// app.use(bodyParser.urlencoded({ extended: true }));
+// app.use(bodyParser.json());
+// app.use(cors());
 
-app.post("/stripe/charge", cors(), async (req, res) => {
+router.post("/stripe/charge", async (req, res) => {
   console.log("stripe-routes.js 9 | route reached", req.body);
   let { amount, id } = req.body;
   console.log("stripe-routes.js 10 | amount and id", amount, id);
@@ -39,6 +39,7 @@ app.post("/stripe/charge", cors(), async (req, res) => {
   }
 });
 
-app.listen(process.env.PORT || 8080, () => {
-  console.log("Server started...");
-});
+module.exports = router;
+// app.listen(process.env.PORT || 8080, () => {
+//   console.log("Server started...");
+// });

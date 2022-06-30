@@ -4,6 +4,8 @@ const Forum = require('../model/forum');
 
 const router = express.Router();
 
+// router.get('/getAll', controller.getAll);
+
 router.get('/getAll', async (request, response, next) => {
     response.contentType('application/json') 
             .status(200)
