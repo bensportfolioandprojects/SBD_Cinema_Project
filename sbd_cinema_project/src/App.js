@@ -1,3 +1,4 @@
+import HomePage from "./components/homepage/Page"
 import './App.css';
 import GettingThere from './components/getting-there/GettingThere';
 import './aboutsbd';
@@ -11,6 +12,7 @@ function App() {
       <GettingThere/>
       <Classifications/>
       <PlacesToGo/>      
+    <HomePage/>
     </div>
   );
 }
