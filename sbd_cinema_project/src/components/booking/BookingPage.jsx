@@ -1,6 +1,6 @@
 import BookingForm from "./BookingForm";
 
-const Page = () => {
+const BookingPage = () => {
     return (
     <div>
         <BookingForm/>
@@ -8,4 +8,4 @@ const Page = () => {
     );
 }
  
-export default Page;
+export default BookingPage;
