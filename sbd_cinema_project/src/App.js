@@ -1,4 +1,6 @@
 import HomePage from "./components/homepage/Page"
+import logo from './logo.svg';
+import BookingPage from './components/booking/Page'
 import './App.css';
 import GettingThere from './components/getting-there/GettingThere';
 import './aboutsbd';
@@ -13,6 +15,7 @@ function App() {
       <Classifications/>
       <PlacesToGo/>      
     <HomePage/>
+        <BookingPage/>
     </div>
   );
 }
