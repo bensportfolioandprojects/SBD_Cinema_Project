@@ -5,7 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+<<<<<<< HEAD
+  background-color:#3b3b3b;
+=======
   background-color: #3B3B3B;
+>>>>>>> dev
 }
 
 code {
@@ -13,6 +17,43 @@ code {
     monospace;
 }
 
+<<<<<<< HEAD
+/* GETTING THERE */
+
+.localTitle {
+  font-family:Helvetica;
+  color:goldenrod;
+  margin-bottom:5vw;
+}
+
+.localBody {
+  background-color:#005C73;
+  border-radius:15px;
+  border-style:double;
+  border-width:5px;
+  width:90vw;
+  margin:5vw;
+  color:white;
+}
+
+#map {
+  width:90vw;
+  margin-left:5vw;
+  margin-right:5vw;
+  margin-bottom:2vw;
+  border-style:double;
+  border-width:5px;
+  border-radius:15px;
+  color:white;
+}
+
+#localCinema {
+  border-style:double;
+  border-width:5px;
+  border-radius:15px;
+  color:white;
+}
+=======
 
 a:link {
   color:aquamarine;
@@ -307,3 +348,4 @@ margin-left: 20px;
   color:white;
 }
 
+>>>>>>> dev

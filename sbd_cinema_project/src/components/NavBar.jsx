@@ -4,41 +4,29 @@ import Container from 'react-bootstrap/Container'
 import Offcanvas from 'react-bootstrap/Offcanvas'
 import Nav from 'react-bootstrap/Nav'
 import NavDropdown from 'react-bootstrap/NavDropdown'
-import Form from 'react-bootstrap/Form'
-import FormControl from 'react-bootstrap/FormControl'
-import Button from 'react-bootstrap/Button'
+import SearchBar from "./SearchBar";
+import QACLogo from "../resources/logosbd.png"
 
 
 const NavBar = () => {
   return (
   <>
   {[false].map((expand) => (
-    <Navbar key={expand} bg="light" expand={expand} className="mb-3">
-      <Container fluid>
-        <Navbar.Brand href="#">QA Cinema</Navbar.Brand>
-        <Form className="d-flex">
-              <FormControl
-                type="search"
-                placeholder="Search term"
-                            onFocus={(e) => e.target.placeholder = ''}
-                            onBlur={(e) => e.target.placeholder = 'Search term'}
-                className="me-2"
-                aria-label="Search"
-              />
-              <Button variant="outline-success" id="searchButton">Search</Button>
-            </Form>
-        <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
-        <Navbar.Offcanvas
-          id={`offcanvasNavbar-expand-${expand}`}
+    <Navbar key={expand} bg="dark" expand={expand} className="navBar">
+      <Container className="navContainer" fluid>
+        <Navbar.Brand  href="#"><img className="logoQAC" alt="QA Cinemas Logo" src={QACLogo} width="100px"/></Navbar.Brand>
+        <SearchBar/>
+        <Navbar.Toggle className="navMenuButton" aria-controls={`offcanvasNavbar-expand-${expand}`} />
+        <Navbar.Offcanvas id={`offcanvasNavbar-expand-${expand}`}
           aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
           placement="end"
         >
-          <Offcanvas.Header closeButton>
-            <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
+          <Offcanvas.Header closeButton className="navBarMenu">
+            <Offcanvas.Title  id={`offcanvasNavbarLabel-expand-${expand}`}>
               Menu
             </Offcanvas.Title>
           </Offcanvas.Header>
-          <Offcanvas.Body>
+          <Offcanvas.Body className="navBarBody">
             <Nav className="justify-content-end flex-grow-1 pe-3">
               <Nav.Link href="homepage.html">Homepage</Nav.Link>
               <Nav.Link href="listingsgallery.html">Listing Gallery</Nav.Link>
