@@ -1,6 +1,6 @@
 const VenueImage = ({data}) => {
 
-    const {venueImage, venueMap, venueTitle, venuePromo} = data;
+    const {venueImage, venueMap, venueTitle, venuePromo, venuePhotoCredit} = data;
 
     return ( 
         <div className="venueMoreData">
@@ -11,7 +11,10 @@ const VenueImage = ({data}) => {
             <div className="venueBonus">
                 <h4>
                     {venuePromo}
-                </h4>
+                </h4><br/>
+                <h5>
+                    {venuePhotoCredit}
+                </h5>
             </div>
         </div>
      );

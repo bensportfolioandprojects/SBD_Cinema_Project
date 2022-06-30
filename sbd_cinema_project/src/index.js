@@ -8,8 +8,8 @@ import NewReleasesGalleryLayout from './newreleasesgallerylayout';
 import ScreensLayout from './screenslayout';
 import OpeningTimes from './OpeningTimes';
 import GettingThere from './components/getting-there/GettingThere';
-import TicketBookings from '/components/booking/BookingPage';
-import Payment from '/components/payment/PaymentDetails';
+// import TicketBookings from '/components/booking/BookingPage';
+// import Payment from '/components/payment/PaymentDetails';
 import DiscussionBoard from './components/forum/DiscussionPage';
 import HomePage from './components/homepage/HomePage';
 import PlacesToGo from './PlacesToGo';
@@ -36,8 +36,8 @@ root.render(
           <Route path='OpeningTimes' element={<OpeningTimes/>}/>
           <Route path='screens' element={<ScreensLayout/>}/>
           <Route path='gettingthere' element={<GettingThere/>}/>
-          <Route path='ticketbooking' element={<TicketBookings/>}/>
-          <Route path='payment' element={<Payment/>}/>
+          {/* <Route path='ticketbooking' element={<TicketBookings/>}/> */}
+          {/* <Route path='payment' element={<Payment/>}/> */}
           <Route path='discussionboard' element={<DiscussionBoard/>}/>
           <Route path='PlacesToGo' element={<PlacesToGo/>}/>
           <Route path='ContactUs' element={<ContactUs/>}/>
