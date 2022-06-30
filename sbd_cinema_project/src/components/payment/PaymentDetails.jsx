@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
-import axios from 'axios';
-import Payment from './Payment';
+import React from 'react';
+import { Elements } from "@stripe/react-stripe-js";
+import { loadStripe } from "@stripe/stripe-js";
+import CheckoutForm from './CheckoutForm';
 
 const PaymentDetails = ({ data }) => {
     const adultprice = 7.4;
@@ -12,6 +14,8 @@ const PaymentDetails = ({ data }) => {
     const [childtickets, setChild] = useState(0);
     const [concessions, setConcession] = useState(0);
     const [total, setTotal] = useState(0);
+    const publicKey = "pk_test_51LFi2VINJaatCO9azz42mZysMTqCUZv9uMQhi3hsgN4flsRWdOvTvsx3U70gzT9i78USaOQ0FSEOZ0CqAFK4RUFj00CACf0Uk7";
+    const stripeTestPromise= loadStripe(publicKey);
     if ({ data }.id) {
         setId(id);
     }
@@ -23,19 +27,19 @@ const PaymentDetails = ({ data }) => {
         //         setAdult(res.adulttickets);
         //         setChild(res.childtickets);
         //         setConcession(res.concessions);
-        //         setTotal((adulttickets*adultprice)+(childtickets*childprice)+(concessions*concessionprice));
-        //         return (
-        //             <Payment data={[{total: (adulttickets*adultprice)+(childtickets*childprice)+(concessions*concessionprice)}]}/>
-        //         )
+        //         setTotal((adulttickets*adultprice)+(childtickets*childprice)+(concessions*concessionprice)*100);
         //     }).catch("ERROR GET");
-        setTotal(12.3);
+        setTotal(1230);
         
         
 
     };
     useEffect(() => {
-        setPaymentform( <Payment data={{total, adulttickets}} />)
-    }, [total]);
+        setPaymentform( 
+        <Elements stripe={stripeTestPromise}>
+            <CheckoutForm data={total}/>
+        </Elements>
+        )}, [total]);
 
     return (
         <div>

@@ -4,6 +4,19 @@
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
-    "stripe": "^9.10.0"
-  }
+    "i": "^0.3.7",
+    "npm": "^8.13.2",
+    "stripe": "^9.11.0"
+  },
+  "name": "sbd_backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./payment/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
