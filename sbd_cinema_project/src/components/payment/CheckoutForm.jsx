@@ -44,8 +44,8 @@ const CheckoutForm = ({data}) => {
     }
     
     return (
-    <form onSubmit={handleSubmit} id="paymentform">
-        <CardElement/>
+    <form onSubmit={handleSubmit} id="cardform">
+        <CardElement className="cardElement"/>
         <button id="paymentsubmit">Pay Now</button>
     </form>
     );
