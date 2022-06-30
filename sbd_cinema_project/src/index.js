@@ -5,12 +5,30 @@ import reportWebVitals from './reportWebVitals';
 import ScreensLayout from './screenslayout';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
+import NavBar from './components/NavBar';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <App /> */}
-    <ScreensLayout />
+    <BrowserRouter>
+      <nav><NavBar/></nav>
+      <Routes>
+        <Route path='/' element={<App />}>
+          <Route index element={<HomePage/>}/>
+          <Route path='listingsgallery' element={<Listings/>}/>
+          <Route path='newreleases' element={<NewReleases/>}/>
+          <Route path='OpeningTimes' element={<OpeningTimes/>}/>
+          <Route path='screenslayout' element={<Screens/>}/>
+          <Route path='gettingthere' element={<GettingThere/>}/>
+          <Route path='ticketbooking' element={<TicketBookings/>}/>
+          <Route path='payment' element={<Payment/>}/>
+          <Route path='PlacesToGo' element={<PlacesToGo/>}/>
+          <Route path='classifications' element={<Classifications/>}/>
+          <Route path='about' element={<AboutSBD/>}/>
+        </Route>
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
