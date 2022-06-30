@@ -2,7 +2,8 @@ import { useState } from "react";
 import { useElements, CardElement, useStripe } from "@stripe/react-stripe-js";
 import axios from "axios";
 //tutorial followed from https://betterprogramming.pub/stripe-api-tutorial-with-react-and-node-js-1c8f2020a825
-//as such, code is heavily used from that work
+//as such, code is heavily used from that work.
+
 
 const CheckoutForm = ({data}) => {
     console.log(data);
