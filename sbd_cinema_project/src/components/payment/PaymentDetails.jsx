@@ -48,7 +48,7 @@ const PaymentDetails = ({ data }) => {
                 <form onSubmit={handleSubmit} className="entryform">
                     <label htmlFor="paymentid">Please enter your booking id here: </label>
                     <input type="text" id="paymentid" value={id} onChange={e => setId(e.target.value)} />
-                    <label>Price Of Booking: {total}</label>
+                    <label>Price Of Booking: {total/100}</label>
                     <button type="submit" className="submitbtn">Submit</button>
                 </form>
                 {paymentform}
