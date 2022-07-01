@@ -33,6 +33,15 @@ This project was created with:
 * Open git Bash from your desired folder and type the following:
           ```git clone (x)``` (in place of the (x), use the repository address)
 
+## Running the Project
+* Open git Bash in the cloned directory called `sbd_cinema_project` and type the following:
+          ```npm start```
+* Open a second git Bash in the directory called `sbd_backend` and type the following:
+          ```npm start```
+* If there are any dependencies missing, you will be informed and will just need to type the following:
+          ```npm install (x)``` (Replace the (x) with any dependencies that you are missing, and repeat the above steps)
+* The project should be running and a browser window should open on the Cinema site.
+
 ## Testing
 Unfortunately, due to time and personnel restraints, we were unable to complete any automated testing. However, we were able to perform exstensive manual testing. With this we covered:
 * Booking Form - The booking form takes in details and stores them in a database, then either manually retrieving them via an id, or automatically transferring those details to the payment page. Validation on this included selecting the correct number of tickets to match up with the amount booked, and selecting a valid film from a dropdown box.
