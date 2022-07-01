@@ -8,6 +8,9 @@ const ContactUs = () => {
             <ContactTitle />
             <Email />
             <PostalAddress />
+            <div className="emailCredit">
+                <p>Email Form - Modified version of code from https://mailtrap.io/blog/react-contact-form/ by Aleksandr Vernin</p>
+            </div>
         </>
      );
 }
