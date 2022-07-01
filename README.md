@@ -43,7 +43,7 @@ This project was created with:
 * The project should be running and a browser window should open on the Cinema site.
 
 ## Testing
-Unfortunately, due to time and personnel restraints, we were unable to complete any automated testing. However, we were able to perform exstensive manual testing. With this we covered:
+Unfortunately, due to time and personnel restraints, we were unable to complete any automated testing. However, we were able to perform extensive manual testing. With this we covered:
 * Booking Form - The booking form takes in details and stores them in a database, then either manually retrieving them via an id, or automatically transferring those details to the payment page. Validation on this included selecting the correct number of tickets to match up with the amount booked, and selecting a valid film from a dropdown box.
 * Payment Page - The payment page takes in the id from the booking page and calculates the correct price for the selection of tickets. Once details are entered, the payment system transfers the information across to the Stripe web application, where it can be processed.
 * Email Form - The email for on the Contact Us page correctly informs the user that their message has been sent, while also sending the message as an email to the dedicated email address. It also sends the user a confirmation email to the email address they state in the form. If the user doesn't enter and email address, or enters one that is not valid, a message with appear, informing them that they need to try again.
