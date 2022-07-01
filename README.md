@@ -36,6 +36,7 @@ Unfortunately, due to time and personnel restraints, we were unable to complete 
 * **Richard de Young** - [RicharddeYoung](https://github.com/RicharddeYoung)
 
 ## Acknowledments
+* Daniel Charles Conroy - Dan was originally part of our team, but left part way through the project.
 * CheckoutForm, and parts of PaymentDetails, were created from tutorial found here: https://betterprogramming.pub/stripe-api-tutorial-with-react-and-node-js-1c8f2020a825 - As such, credit goes to Ignacio Aguirre
 * Email Form was created by modifying a tutorial found here: https://mailtrap.io/blog/react-contact-form/ - As such, credit goes to Aleksandr Vernin
 * Cinema carousel photo 2020 © JIM LO SCALZO/EPA-EFE/Shutterstock
