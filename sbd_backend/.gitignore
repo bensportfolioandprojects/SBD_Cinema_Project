@@ -1,0 +1,43 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+=======
+/node_modules
+>>>>>>> dev
+=======
+/node_modules
+>>>>>>> Home-Page
+=======
+/node_modules
+<<<<<<< HEAD
+>>>>>>> Ticket-Bookings
+=======
+>>>>>>> 1e86c54d7beec47a949a8574623d7b169fe0aeff
+>>>>>>> 329f27f75780ac446d813cb9da78d27429105c95
+=======
+/node_modules
+>>>>>>> Payment
