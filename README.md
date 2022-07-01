@@ -1,5 +1,5 @@
 # SBD Cinema Project
-We were taksed with creating a complete Web Application for a chain of cinemas, to allow users to view, book and pay for tickets for film screenings.
+We were tasked with creating a complete Web Application for a chain of cinemas, to allow users to view, book and pay for tickets for film screenings.
 
 ## Getting Started
 This application can be found in the repository on GitHub - https://github.com/bensportfolioandprojects/SBD_Cinema_Project
