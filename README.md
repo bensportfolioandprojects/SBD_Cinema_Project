@@ -1,4 +1,4 @@
-# SBD_Cinema_Project
+# SBD Cinema Project
 We were taksed with creating a complete Web Application for a chain of cinemas, to allow users to view, book and pay for tickets for film screenings.
 
 ## Getting Started
