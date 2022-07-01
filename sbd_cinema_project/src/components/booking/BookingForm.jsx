@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { useState } from 'react';
 import {v4} from 'uuid';
+import { NavLink } from 'react-router-dom';
 
 const BookingForm = ({data}) => {
     const [username, setUsername] = useState("");
@@ -111,7 +112,11 @@ const BookingForm = ({data}) => {
                 <button type="submit" className="submitbtn">Submit</button>
                 <label id="bookingreftitle">Booking Ref:</label>
                 <label id="bookingref">{bookingid}</label>
-                <p>(This will be needed at checkout)</p>
+                <p>(Save this if you wish to pay later)</p>
+                <NavLink to='../payment'
+                     state = {{bookingid}}>
+                    Continue to Payment
+                </NavLink>
                 
                 </form>
                 

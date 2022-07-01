@@ -12,7 +12,7 @@ const CheckoutForm = ({data}) => {
     
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const url ="http://localhost:8080/stripe/charge";
+        const url ="http://localhost:3001/payment/stripe/charge";
         
         const {error, paymentMethod} = await stripe.createPaymentMethod({
             type: "card",
@@ -23,7 +23,7 @@ const CheckoutForm = ({data}) => {
             try {
                 const { id } = paymentMethod;
                 const response = await axios.post(
-                  "http://localhost:8080/stripe/charge",
+                  "http://localhost:3001/payment/stripe/charge",
                   {
                     amount: parseInt(data),
                     id: id,

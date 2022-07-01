@@ -1,11 +1,13 @@
 import BookingForm from "./BookingForm";
 
-const Page = () => {
+const BookingPage = () => {
+
     return (
     <div>
         <BookingForm/>
     </div>
     );
 }
- 
-export default Page;
+
+export default BookingPage;
+
