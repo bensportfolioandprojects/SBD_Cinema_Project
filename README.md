@@ -9,12 +9,29 @@ This project was created with:
 * [Visual Studio Code](https://code.visualstudio.com/download) - Multi-Language, Integrated Development Environment
 * [git Bash](https://git-scm.com/) - Terminal for running programmes during build and testing
 * [GitHub](https://github.com/) - Repository
+* Axios - Frontend Server Functionality
+* Stripe - Payment Functionality
+* React - Frontend management
+* React-Bootstrap - Frontend Visual Functionality
+* React-Router-Dom - Site Routing Functionality
+* React-Modal - Modal Popup Functionality
+* Nodemailer - Email Management
+* Express - Server Management
+* Leaflet - Map Functionality
+* Morgan - Logging
+* Node JS - Backend Functionality
+* dotenv - Environment Management
 
 ## Jira Link
 [Jira](https://pezantish.atlassian.net/browse/SBD) - Kanban Board/Sprints etc.
 
 ## Google Drive Documentation
 [Google Drive](https://drive.google.com/drive/folders/15DeymIyhmH3LW9Q5rNr97UYiJK53QdZ1?ths=true) - Documentation.
+
+## Retrieving Project from GitHub
+* Download the project files from the [GitHub](https://github.com/bensportfolioandprojects/SBD_Cinema_Project) link by clicking on the Code button. This gives you the repository address.
+* Open git Bash from your desired folder and type the following:
+          ```git clone (x)``` (in place of the (x), use the repository address)
 
 ## Testing
 Unfortunately, due to time and personnel restraints, we were unable to complete any automated testing. However, we were able to perform exstensive manual testing. With this we covered:
