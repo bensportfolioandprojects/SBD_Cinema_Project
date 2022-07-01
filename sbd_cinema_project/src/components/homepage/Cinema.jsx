@@ -6,6 +6,7 @@ import TopGunMaverick from '../../resources/TopGunMaverick.jpg';
 import DoctorStrange2 from '../../resources/DoctorStrange2.webp';
 import Carousel from 'react-bootstrap/Carousel';
 import { useState } from "react";
+import { NavLink } from 'react-router-dom';
 
 const Cinema = () => {
 
@@ -14,33 +15,33 @@ const Cinema = () => {
             <div className="carouselContainer">
                 <Carousel className="carouselBase" fade>
                     <Carousel.Item>
-                        <a href="#">
+                        <NavLink to="/listingsgallery" title="Listings Gallery">
                             <img className="currentMovies" src={Lightyear} alt="Lightyear"/>
-                        </a>
+                        </NavLink>
                         <Carousel.Caption>
                             <p></p>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <a href="#">
+                        <NavLink to="/listingsgallery" title="Listings Gallery">
                             <img className="currentMovies" src={JurassicWorld3} alt="Jurassic World: Dominion"/>
-                        </a>
+                        </NavLink>
                         <Carousel.Caption>
                             <p></p>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <a href="#">
+                        <NavLink to="/listingsgallery" title="Listings Gallery">
                             <img className="currentMovies" src={TopGunMaverick} alt="Top Gun: Maverick"/>
-                        </a>
+                        </NavLink>
                         <Carousel.Caption>
                             <p></p>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <a href="#">
+                        <NavLink to="/listingsgallery" title="Listings Gallery">
                             <img className="currentMovies" src={DoctorStrange2} alt="Doctor Strange in the Multiverse of Madness"/>
-                        </a>
+                        </NavLink>
                         <Carousel.Caption>
                             <p></p>
                         </Carousel.Caption>

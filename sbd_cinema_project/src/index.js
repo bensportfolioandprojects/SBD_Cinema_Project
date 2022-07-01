@@ -15,12 +15,20 @@ import HomePage from './components/homepage/HomePage';
 import PlacesToGo from './PlacesToGo';
 import Classifications from './Classifications';
 import ContactUs from './ContactUs';
+import JWDImage from './components/listingsgallery/JWDImage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './components/NavBar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
+import DSImage from './components/listingsgallery/DSImage';
+import LImage from './components/listingsgallery/LImage';
+import TGMImage from './components/listingsgallery/TGMImage';
+import TImage from './components/newreleasegallery/TImage';
+import RCRImage from './components/newreleasegallery/RCRImage';
+import BTImage from './components/newreleasegallery/BTImage';
+import SMImage from './components/newreleasegallery/SMImage';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -43,6 +51,14 @@ root.render(
           <Route path='ContactUs' element={<ContactUs/>}/>
           <Route path='classifications' element={<Classifications/>}/>
           <Route path='about' element={<AboutSBDLayout/>}/>
+          <Route path='JWDImage' element={<JWDImage/>}/>
+          <Route path='DSImage' element={<DSImage/>}/>
+          <Route path='LImage' element={<LImage/>}/>
+          <Route path='TGMImage' element={<TGMImage/>}/>
+          <Route path='TImage' element={<TImage/>}/>
+          <Route path='RCRImage' element={<RCRImage/>}/>
+          <Route path='BTImage' element={<BTImage/>}/>
+          <Route path='SMImage' element={<SMImage/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
