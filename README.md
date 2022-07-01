@@ -2,3 +2,5 @@
 
 CheckoutForm, and parts of PaymentDetails, were created from tutorial found here: https://betterprogramming.pub/stripe-api-tutorial-with-react-and-node-js-1c8f2020a825
 As such, credit goes to Ignacio Aguirre
+
+Cinema carousel photo 2020 © JIM LO SCALZO/EPA-EFE/Shutterstock 
