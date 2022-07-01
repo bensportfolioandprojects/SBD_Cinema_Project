@@ -33,6 +33,7 @@ code {
 
 #map {
   width:90vw;
+  height:45vh;
   margin-left:5vw;
   margin-right:5vw;
   margin-bottom:2vw;
@@ -831,3 +832,38 @@ margin-left: 20px;
   padding-bottom:5vw;
   text-align:center;
 } 
+/* PAYMENT */
+
+.paymenttitle {
+  font-family:Helvetica;
+  color: goldenrod;
+}
+
+.paymentform {
+  background-color:#005C73;
+  width: 90vw;
+  margin-left:5vw;
+  border-style:double;
+  border-width:5px;
+  border-radius:15px;
+  color:white;
+}
+
+#paymentid {
+  margin-top:2vmax;
+  margin-right:3vw;
+}
+
+#cardform {
+  color:white;
+  margin-top:2vh;
+  background-color:#178aa7;
+}
+
+#paymentsubmit {
+  margin-bottom:2vh;
+}
+
+.cardElement {
+  color:white;
+}
